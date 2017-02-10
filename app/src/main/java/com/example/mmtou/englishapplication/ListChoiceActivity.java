@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class ListChoiceActivity extends AppCompatActivity {
     RelativeLayout CommonList;
     RelativeLayout FullList;
+    RelativeLayout DifferentForms;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +31,15 @@ public class ListChoiceActivity extends AppCompatActivity {
         text3.setTypeface(font2,Typeface.BOLD);
         text4.setTypeface(font2,Typeface.BOLD);
 
-
-
-
-
-
-
-
         CommonList = (RelativeLayout) findViewById(R.id.layout2);
         FullList = (RelativeLayout) findViewById(R.id.layout1);
+        DifferentForms = (RelativeLayout)findViewById(R.id.layout3);
 
+        DifferentForms.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(ListChoiceActivity.this,VerbsDifferentWaysActivity.class));
+            }
+        });
 
         CommonList.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

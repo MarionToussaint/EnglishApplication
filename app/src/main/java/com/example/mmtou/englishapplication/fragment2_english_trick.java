@@ -25,7 +25,7 @@ public class fragment2_english_trick extends AppCompatActivity {
         exemple.setTypeface(font);
 
         title.setText("Verbs With All 3 Forms Identical");
-        text.setText("Let’s begin with the easiest group of irregular verbs ! These verbs are the same in the present, the past, and the past participle");
+        text.setText("Let’s begin with the easiest group of irregular verbs ! These verbs are the same in the present, the past, and the past participle\n");
         exemple.setText("bet" +"\n" + "burst"+"\n" + "cast"+"\n" + "cost" +"\n" + "cut"+"\n" + "fit"+"\n" + "hit"+"\n" + "hurt" +"\n" +"let"+"\n" + "put" +"\n" +"quit"+"\n" +"set"+"\n" +
                 "put" +"\n" +
                 "shut"+"\n" +"split"+"\n" + "spread");

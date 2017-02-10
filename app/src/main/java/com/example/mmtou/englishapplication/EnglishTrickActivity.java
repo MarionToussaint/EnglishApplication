@@ -57,12 +57,29 @@ public class EnglishTrickActivity extends TabActivity {
         Intent tab4Intent = new Intent(this, fragment4_english_trick.class);
         tab4.setContent(tab4Intent);
 
+        TabHost.TabSpec tab5 = tabHost.newTabSpec("Category 4");
+        tab5.setIndicator("Category 4");
+        Intent tab5Intent = new Intent(this, fragment5_english_trick.class);
+        tab5.setContent(tab5Intent);
 
-        // Adding all TabSpec to TabHost
-        tabHost.addTab(tab1); // Adding photos tab
-        tabHost.addTab(tab2); // Adding songs tab
+        TabHost.TabSpec tab6 = tabHost.newTabSpec("Category 5");
+        tab6.setIndicator("Category 5");
+        Intent tab6Intent = new Intent(this, fragment6_english_trick.class);
+        tab6.setContent(tab6Intent);
+
+        TabHost.TabSpec tab7 = tabHost.newTabSpec("Category 6");
+        tab7.setIndicator("Category 6");
+        Intent tab7Intent = new Intent(this, fragment7_english_trick.class);
+        tab7.setContent(tab7Intent);
+
+        tabHost.addTab(tab1);
+        tabHost.addTab(tab2);
         tabHost.addTab(tab3);
         tabHost.addTab(tab4);
+        tabHost.addTab(tab5);
+        tabHost.addTab(tab6);
+        tabHost.addTab(tab7);
+
 
         for(int i=0;i<tabHost.getTabWidget().getChildCount();i++)
         {
