@@ -22,9 +22,15 @@
         <activity
             android:name=".EnglishTrickActivity"
             android:label="@string/title_activity_english_trick"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".fragment1_english_trick"/>
-        <activity android:name=".fragment2_english_trick"/>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".fragment1_english_trick" />
+        <activity android:name=".fragment2_english_trick" />
+        <activity android:name=".fragment3_english_trick" />
+        <activity android:name=".fragment4_english_trick" />
+        <activity android:name=".fragment5_english_trick" />
+        <activity android:name=".fragment6_english_trick" />
+        <activity android:name=".fragment7_english_trick" />
+        <activity android:name=".VerbsDifferentWaysActivity"></activity>
     </application>
 
 </manifest>

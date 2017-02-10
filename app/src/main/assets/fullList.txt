@@ -1,6 +1,6 @@
-﻿abide	abode	abode	respecter
+﻿*abide	abode	abode	respecter
 arise	arose	arisen	survenir
-awake	awoke	awoken	se réveiller
+*awake	awoke	awoken	se réveiller
 be	was/were	been	être
 bear	bore	born	taper
 beat	beat	beaten	battre
@@ -89,7 +89,7 @@ leave	left	left	laisser
 lend	lent	lent	prêter
 let	let	let	laisser
 lie	lay	lain	se coucher
-light	lit	lit	éclairer
+*light	lit	lit	éclairer
 lose	lost	lost	perdre
 make	made	made	fabriquer
 mean	meant	meant	signifier
@@ -98,7 +98,7 @@ meet	met	met	rencontrer
 mislead	misled	misled	tromper
 mistake	mistook	mistaken	comprendre à tort
 misunderstand	misunderstood	misunderstood	mal interpréter
-mow	mowed	mowed	tondre
+*mow	mowed	mowed	tondre
 offset	offset	offset	compenser
 overcome	overcame	overcome	surmonter
 overhear	overheard	overheard	surprendre
@@ -135,13 +135,13 @@ sleep	slept	slept	dormir
 slide	slid	slid	glisser
 slink	slunk	slunk	s'en aller furtivement
 slit	slit	slit	fendre
-smell	smelt	smelt	sentir
+*smell	smelt	smelt	sentir
 sow	sowed	sown	semer
 speak	spoke	spoken	parler
-speed	sped	sped	aller vite
-spell	spelt	spelt	épeler
+*speed	sped	sped	aller vite
+*spell	spelt	spelt	épeler
 spend	spent	spent	dépenser
-spill	spilt	spilt	renverser
+*spill	spilt	spilt	renverser
 spin	spun	spun	tourner
 spit	spat	spat	cracher
 split	split	split	fendre
@@ -171,7 +171,7 @@ thrust	thrust	thrust	enfoncer
 tread	trod	trodden	piétiner quelque chose
 undergo	underwent	undergone	subir
 understand	understood	understood	comprendre
-wake	woke	woken	réveiller
+*wake	woke	woken	réveiller
 wear	wore	worn	porter (avoir sur soi)
 weave	wove	woven	tisser
 *wed	wed	wed	marier
