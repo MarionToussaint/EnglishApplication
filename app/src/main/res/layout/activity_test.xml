@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/font"
+    tools:context="com.example.mmtou.englishapplication.OpenActivity">
+
+
+    <RelativeLayout
+        android:layout_width="900px"
+        android:layout_height="200px"
+        android:background="@color/font2"
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_alignLeft="@+id/layout1"
+        android:layout_alignStart="@+id/layout1"
+        android:layout_marginTop="29dp">
+
+        <TextView
+            android:text="Most Common Irregular Verbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listVerbs"
+            android:textSize="22sp"
+            android:textColor="@android:color/holo_red_light"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="900px"
+        android:layout_height="200px"
+        android:background="@color/font2"
+        android:id="@+id/layout3"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/layout2"
+        android:layout_alignLeft="@+id/layout2"
+        android:layout_alignStart="@+id/layout2">
+
+        <TextView
+            android:text="Way to Study the Irregular Verbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/study"
+            android:textSize="22sp"
+            android:textColor="@android:color/holo_red_light"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="900px"
+        android:layout_height="200px"
+        android:background="@color/font2"
+        android:id="@+id/layout1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="Full List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:background="@color/font2"
+        android:id="@+id/layout0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:text="The Irregular Verbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title1"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="30sp"
+            android:layout_marginTop="51dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="List of Verbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title3"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/title1"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
