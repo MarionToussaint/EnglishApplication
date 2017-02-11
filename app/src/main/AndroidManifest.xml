@@ -30,7 +30,8 @@
         <activity android:name=".fragment5_english_trick" />
         <activity android:name=".fragment6_english_trick" />
         <activity android:name=".fragment7_english_trick" />
-        <activity android:name=".VerbsDifferentWaysActivity"></activity>
+        <activity android:name=".VerbsDifferentWaysActivity" />
+        <activity android:name=".ExerciseChoiceActivity"></activity>
     </application>
 
 </manifest>
