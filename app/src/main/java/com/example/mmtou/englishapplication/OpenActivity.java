@@ -47,5 +47,11 @@ public class OpenActivity extends AppCompatActivity {
             }
         });
 
+        layout1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(OpenActivity.this,ExerciseChoiceActivity.class));
+            }
+        });
     }
 }

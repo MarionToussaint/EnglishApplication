@@ -38,7 +38,6 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-        ArrayList<String> s = new ArrayList<>();
         list = (ListView)findViewById(R.id.listview);
 
         try {
@@ -47,7 +46,7 @@ public class ListActivity extends AppCompatActivity {
             //Scanner scanner = new Scanner(new FileReader("test.txt"));
             String line;
             while ((line = br.readLine())!=null) {
-                HashMap<String, String> map = new HashMap<String, String>();
+                HashMap<String, String> map = new HashMap<>();
                 String pats[]=line.split("\t");
                 map.put("infinitive",pats[0]);
                 map.put("preterite",pats[1]);
