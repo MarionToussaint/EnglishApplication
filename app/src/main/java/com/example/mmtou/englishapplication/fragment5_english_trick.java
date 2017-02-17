@@ -44,43 +44,43 @@ public class fragment5_english_trick extends AppCompatActivity {
         exemple7.setTypeface(font);
         exemple6.setTypeface(font);
 
-        title.setText("Verbs With Vowel Changes");
+        title.setText("Verbs With Vowel Changes\n");
         ssCat.setText("Long “E” Changes To Short “E”");
-        exemple2.setText("keep\tkept\tkept\n" +
-                "sleep\tslept\tslept\n" +
-                "feel\tfelt\tfelt\n" +
-                "bleed\tbled\tbled\n" +
-                "feed\tfed\tfed\n" +
-                "meet\tmet\tmet\n" +
-                "lead\tled\tled\n");
+        exemple2.setText("keep\t\tkept\t\tkept\n" +
+                "sleep\t\tslept\t\tslept\n" +
+                "feel\t\tfelt\t\tfelt\n" +
+                "bleed\t\tbled\t\tbled\n" +
+                "feed\t\tfed\t\tfed\n" +
+                "meet\t\tmet\t\tmet\n" +
+                "lead\t\tled\t\tled\n");
         ssCat1.setText("“Ea” Is Pronounced Differently");
-        exemple3.setText("deal\tdealt\tdealt\n" +
-                "dream\tdreamt\tdreamt\n" +
-                "mean\tmeant\tmeant\n" +
-                "read\tread\tread\n" +
-                "hear\theard\theard\n");
+        exemple3.setText("deal\t\tdealt\t\tdealt\n" +
+                "dream\t\tdreamt\t\tdreamt\n" +
+                "mean\t\tmeant\t\tmeant\n" +
+                "read\t\tread\t\tread\n" +
+                "hear\t\theard\t\theard\n");
         ssCat2.setText("Long “I” Changes To “Ou”");
-        exemple4.setText("bind\tbound\tbound\n" +
-                "find\tfound\tfound\n" +
-                "grind\tground\tground\n" +
-                "wind\twound\twound\n");
+        exemple4.setText("bind\t\tbound\t\tbound\n" +
+                "find\t\tfound\t\tfound\n" +
+                "grind\t\tground\t\tground\n" +
+                "wind\t\twound\t\twound\n");
         ssCat3.setText("Short “I” Changes To “U”");
-        exemple5.setText("dig\tdug\tdug\n" +
-                "stick\tstuck\tstuck\n" +
-                "spin\tspun\tspun\n" +
-                "sting\tstung\tstung\n" +
-                "swing\tswung\tswung\n");
+        exemple5.setText("dig\t\tdug\t\tdug\n" +
+                "stick\t\tstuck\t\tstuck\n" +
+                "spin\t\tspun\t\tspun\n" +
+                "sting\t\tstung\t\tstung\n" +
+                "swing\t\tswung\t\tswung\n");
         ssCat4.setText("-Ell Changes To -Old");
-        exemple6.setText("sell\tsold\tsold\n" +
-                "tell\ttold\ttold\n");
+        exemple6.setText("sell\t\tsold\t\tsold\n" +
+                "tell\t\ttold\t\ttold\n");
         ssCat5.setText("-Ought And –Aught Endings");
-        exemple7.setText("bring\tbrought\tbrought\n" +
-                "buy\tbought\tbought\n" +
-                "catch\tcaught\tcaught\n" +
-                "fight\tfought\tfought\n" +
-                "seek\tsought\tsought\n" +
-                "teach\ttaught\ttaught\n" +
-                "think\tthought\tthought\n");
+        exemple7.setText("bring\t\tbrought\t\tbrought\n" +
+                "buy\t\tbought\t\tbought\n" +
+                "catch\t\tcaught\t\tcaught\n" +
+                "fight\t\tfought\t\tfought\n" +
+                "seek\t\tsought\t\tsought\n" +
+                "teach\t\ttaught\t\ttaught\n" +
+                "think\t\tthought\t\tthought\n");
 
     }
 }

@@ -56,6 +56,10 @@ public class ListActivity extends AppCompatActivity {
             }
             br.close();
 
+            /*LayoutInflater inflater = getLayoutInflater();
+            View header = inflater.inflate(R.layout.header,list,false);
+            list.addHeaderView(header,null,false);*/
+
             SimpleAdapter simpleAdapter = new SimpleAdapter(this, feedList, R.layout.row_list, new String[]{"infinitive", "preterite", "pastParticiple", "translate"},
                     new int[]{R.id.infinitive1, R.id.preterite1, R.id.pastParticiple1, R.id.translate1});
             list.setAdapter(simpleAdapter);
