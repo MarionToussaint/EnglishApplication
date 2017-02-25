@@ -11,6 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.mmtou.englishapplication.R;
+import com.example.mmtou.englishapplication.model.StyleModel;
 
 import org.w3c.dom.Text;
 
@@ -22,17 +23,17 @@ import java.util.zip.Inflater;
  */
 
 public class fragment1_english_trick extends AppCompatActivity {
+    private StyleModel style = new StyleModel();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment1_english_trick);
-        Typeface font = Typeface.createFromAsset(getAssets(),"fonts/Aprikas_light_Demo.ttf");
-        Typeface font2 = Typeface.createFromAsset(getAssets(),"fonts/LemonMilk.ttf");
+
         TextView title = (TextView) findViewById(R.id.titleTrick);
         TextView text = (TextView) findViewById(R.id.intro);
-        title.setTypeface(font2);
-        text.setTypeface(font);
+        style.changeFontOfSingleText("fonts/LemonMilk.ttf",fragment1_english_trick.this,title);
+        style.changeFontOfSingleText("fonts/Aprikas_light_Demo.ttf",fragment1_english_trick.this,text);
 
         title.setText("Tips For Learning Irregular Verbs");
         text.setText("Did you know that about 70% of the time when we use a verb in English, it is an irregular one ? That means that learning and using irregular verbs is essential for learning English !\n" +
@@ -42,9 +43,6 @@ public class fragment1_english_trick extends AppCompatActivity {
                 "Don’t just study this list – try to create your own sentences and use all the verbs you know ! This will help you remember them much better\n" +
                 "\n" +
                 "Ready ? Let’s go !");
-
-
-        System.out.println(text.getText());
     }
 
 

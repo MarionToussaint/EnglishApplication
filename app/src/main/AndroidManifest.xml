@@ -8,19 +8,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OpenActivity">
+        <activity android:name=".activity.OpenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListChoiceActivity" />
-        <activity android:name=".ListActivity" />
-        <activity android:name=".CommonListActivity" />
+        <activity android:name=".activity.ListChoiceActivity" />
+        <activity android:name=".activity.ListActivity" />
+        <activity android:name=".activity.CommonListActivity" />
         <activity android:name=".TestActivity" />
         <activity
-            android:name=".EnglishTrickActivity"
+            android:name=".activity.EnglishTrickActivity"
             android:label="@string/title_activity_english_trick"
             android:theme="@style/AppTheme" />
         <activity android:name=".fragment1_english_trick" />
@@ -30,8 +29,12 @@
         <activity android:name=".fragment5_english_trick" />
         <activity android:name=".fragment6_english_trick" />
         <activity android:name=".fragment7_english_trick" />
-        <activity android:name=".VerbsDifferentWaysActivity" />
-        <activity android:name=".ExerciseChoiceActivity"></activity>
+        <activity android:name=".activity.VerbsDifferentWaysActivity" />
+        <activity android:name=".ExerciseChoiceActivity" />
+        <activity android:name=".activity.Exercise1Activity" />
+        <activity android:name=".activity.Exercise1Correction" />
+        <activity android:name=".activity.Exercise1ChoiceActivity" />
+        <activity android:name=".Exercise2Activity"></activity>
     </application>
 
 </manifest>

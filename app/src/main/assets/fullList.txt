@@ -5,12 +5,12 @@ be	was/were	been	être
 bear	bore	born	taper
 beat	beat	beaten	battre
 become	became	become	devenir
-beget	begot	begotten	engendrer	
+beget	begot	begotten	engendrer
 begin	began	begun	commencer
 bend	bent	bent	plier
 bet	bet	bet	parier
 bid	bid	bid	offrir
-bind	bound	bound	?
+bind	bound	bound	lier
 bite	bit	bitten	mordre
 bleed	bled	bled	saigner
 blow	blew	blown	souffler
@@ -53,7 +53,7 @@ find	found	found	trouver
 flee	fled	fled	fuir
 fling	flung	flung	lancer
 fly	flew	flown	voler
-forbid	forbade	forbidden	interdire	
+forbid	forbade	forbidden	interdire
 *forecast	forecast	forecast	prévoir
 foresee	foresaw	foreseen	anticiper
 foretell	foretold	foretold	raconter

@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/font2"
-    tools:context="com.example.mmtou.englishapplication.EnglishTrickActivity$PlaceholderFragment">
+    tools:context="com.example.mmtou.englishapplication.activity.EnglishTrickActivity$PlaceholderFragment">
 
     <TextView
         android:text="TextView"

@@ -1,24 +1,27 @@
 package com.example.mmtou.englishapplication;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.mmtou.englishapplication.model.StyleModel;
+
+import java.util.ArrayList;
 
 /**
  * Created by mmtou on 08/02/2017.
  */
 
 public class fragment4_english_trick extends AppCompatActivity {
+    private ArrayList<TextView> listTextView = new ArrayList<TextView>();
+    private ArrayList<TextView> listTextView2 = new ArrayList<TextView>();
+    private StyleModel style = new StyleModel();
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment4_english_trick);
 
-        Typeface font = Typeface.createFromAsset(getAssets(),"fonts/Aprikas_light_Demo.ttf");
-        Typeface font2 = Typeface.createFromAsset(getAssets(),"fonts/LemonMilk.ttf");
-        TextView title = (TextView) findViewById(R.id.titlecat1);
+        TextView title = (TextView) findViewById(R.id.verb2);
         TextView text = (TextView) findViewById(R.id.tab);
         TextView ssCat = (TextView) findViewById(R.id.ssCat);
         TextView exemple2 = (TextView) findViewById(R.id.example2);
@@ -28,16 +31,20 @@ public class fragment4_english_trick extends AppCompatActivity {
         TextView exemple4 = (TextView) findViewById(R.id.example4);
         TextView ssCat3 = (TextView) findViewById(R.id.ssCat3);
         TextView exemple5 = (TextView) findViewById(R.id.example5);
-        title.setTypeface(font2);
-        ssCat.setTypeface(font2);
-        ssCat1.setTypeface(font2);
-        ssCat2.setTypeface(font2);
-        ssCat3.setTypeface(font2);
-        text.setTypeface(font);
-        exemple2.setTypeface(font);
-        exemple3.setTypeface(font);
-        exemple4.setTypeface(font);
-        exemple5.setTypeface(font);
+
+        listTextView.add(ssCat);
+        listTextView.add(ssCat1);
+        listTextView.add(ssCat2);
+        listTextView.add(ssCat3);
+        listTextView.add(title);
+
+        listTextView2.add(text);
+        listTextView2.add(exemple2);
+        listTextView2.add(exemple3);
+        listTextView2.add(exemple4);
+        listTextView2.add(exemple5);
+        style.changeFont("fonts/Aprikas_light_Demo.ttf",fragment4_english_trick.this,listTextView2);
+        style.changeFont("fonts/LemonMilk.ttf",fragment4_english_trick.this,listTextView);
 
         title.setText("Verbs With –N In The Past Participle");
         text.setText("These verbs are a little more complicated, as they have –n in the past participle form. There are a few different groups of verbs :");

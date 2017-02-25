@@ -1,22 +1,27 @@
 package com.example.mmtou.englishapplication;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import com.example.mmtou.englishapplication.model.StyleModel;
+
+import java.util.ArrayList;
 
 /**
  * Created by mmtou on 10/02/2017.
  */
 
 public class fragment5_english_trick extends AppCompatActivity {
+    private ArrayList<TextView> listTextView = new ArrayList<TextView>();
+    private ArrayList<TextView> listTextView2 = new ArrayList<TextView>();
+    private StyleModel style = new StyleModel();
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment5_english_trick);
 
-        Typeface font = Typeface.createFromAsset(getAssets(),"fonts/Aprikas_light_Demo.ttf");
-        Typeface font2 = Typeface.createFromAsset(getAssets(),"fonts/LemonMilk.ttf");
-        TextView title = (TextView) findViewById(R.id.titlecat1);
+        TextView title = (TextView) findViewById(R.id.verb2);
         TextView ssCat = (TextView) findViewById(R.id.ssCat);
         TextView exemple2 = (TextView) findViewById(R.id.example2);
         TextView ssCat1 = (TextView) findViewById(R.id.ssCat1);
@@ -30,19 +35,23 @@ public class fragment5_english_trick extends AppCompatActivity {
         TextView ssCat5 = (TextView) findViewById(R.id.ssCat5);
         TextView exemple7 = (TextView) findViewById(R.id.example7);
 
-        title.setTypeface(font2);
-        ssCat.setTypeface(font2);
-        ssCat1.setTypeface(font2);
-        ssCat2.setTypeface(font2);
-        ssCat3.setTypeface(font2);
-        ssCat4.setTypeface(font2);
-        ssCat5.setTypeface(font2);
-        exemple2.setTypeface(font);
-        exemple3.setTypeface(font);
-        exemple4.setTypeface(font);
-        exemple5.setTypeface(font);
-        exemple7.setTypeface(font);
-        exemple6.setTypeface(font);
+        listTextView.add(title);
+        listTextView.add(ssCat);
+        listTextView.add(ssCat1);
+        listTextView.add(ssCat2);
+        listTextView.add(ssCat3);
+        listTextView.add(ssCat4);
+        listTextView.add(ssCat5);
+
+        listTextView2.add(exemple2);
+        listTextView2.add(exemple3);
+        listTextView2.add(exemple4);
+        listTextView2.add(exemple5);
+        listTextView2.add(exemple6);
+        listTextView2.add(exemple7);
+        style.changeFont("fonts/Aprikas_light_Demo.ttf",fragment5_english_trick.this,listTextView2);
+        style.changeFont("fonts/LemonMilk.ttf",fragment5_english_trick.this,listTextView);
+
 
         title.setText("Verbs With Vowel Changes\n");
         ssCat.setText("Long “E” Changes To Short “E”");
