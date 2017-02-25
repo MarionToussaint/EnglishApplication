@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canard">
+
+    <TextView
+        android:text="Example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/example"
+        android:textStyle="normal|bold"
+        android:textColor="@color/font2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pret1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/answer"
+        android:textColor="@color/font2"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Give"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/child_layout2"
+        android:textSize="18sp"
+        android:layout_below="@+id/answer"
+        android:layout_alignLeft="@+id/child_layout"
+        android:layout_alignStart="@+id/child_layout"
+        android:textColor="@color/poudré"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="gave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pastPart2"
+        android:textColor="@color/poudré"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/answer"
+        android:layout_alignLeft="@+id/pret1"
+        android:layout_alignStart="@+id/pret1"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="given"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pastPart2"
+        android:layout_alignLeft="@+id/pastPart1"
+        android:layout_alignStart="@+id/pastPart1"
+        android:id="@+id/pret2"
+        android:textSize="18sp"
+        android:textColor="@color/poudré"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Give"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/child_layout"
+        android:textSize="18sp"
+        android:textColor="@color/poudré"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/example"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Simple Past"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pret1"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/font2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/example"
+        android:layout_toRightOf="@+id/example"
+        android:layout_toEndOf="@+id/example" />
+
+    <TextView
+        android:text="Past Participle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pastPart1"
+        android:textSize="18sp"
+        android:textColor="@color/font2"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/pret1"
+        android:layout_alignBottom="@+id/pret1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+
+</RelativeLayout>
