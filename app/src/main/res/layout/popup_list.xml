@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/canard">
+    android:background="@color/canard"
+    android:id="@+id/popup">
 
     <TextView
         android:text="Participle Form"
@@ -47,30 +48,6 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="Definition of the verb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:id="@+id/definition"
-        android:textColor="@color/font2"
-        android:textStyle="normal|bold"
-        android:textAlignment="center"
-        android:layout_below="@+id/trans"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="First example"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:id="@+id/example1"
-        android:textColor="@color/poudré"
-        android:textStyle="normal|bold"
-        android:textAlignment="center"
-        android:layout_below="@+id/definition"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
         android:text="Second exampleggddhhd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,32 +70,54 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="X"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:id="@+id/button"
+        android:text="ok"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:id="@+id/button6"
+        android:textColor="@color/poudré"
         android:background="@color/font2"
-        android:textSize="10sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/part"
-        android:layout_alignEnd="@+id/part"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/example3"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="infinitive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
         android:id="@+id/inf"
         android:textAllCaps="true"
         android:textStyle="normal|bold"
         android:textColor="@color/font2"
         android:textSize="14sp"
         android:textAlignment="center"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
-        android:layout_below="@+id/button"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:text="Definition of the verb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/definition"
+        android:textColor="@color/font2"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/trans"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="First examplehbhbishbcijbchdb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/example1"
+        android:textColor="@color/poudré"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/definition"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

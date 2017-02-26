@@ -99,8 +99,6 @@ mislead	misled	misled	tromper
 mistake	mistook	mistaken	comprendre à tort
 misunderstand	misunderstood	misunderstood	mal interpréter
 *mow	mowed	mowed	tondre
-offset	offset	offset	compenser
-overcome	overcame	overcome	surmonter
 overhear	overheard	overheard	surprendre
 overtake	overtook	overtaken	dépasser
 pay	paid	paid	payer
