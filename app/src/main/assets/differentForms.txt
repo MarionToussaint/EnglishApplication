@@ -1,0 +1,38 @@
+﻿abide	abode  abided	abode  abided	respecter
+awake	awoke   awakened	awoken   awakened	se réveiller
+broadcast	broadcast  broadcasted	broadcast  broadcasted	diffuser
+burn	burnt   burned	burnt   burned	brûler
+clap	clapt  clapped	clapt  clapped	taper
+cleave	clove  cleaved	cloven  cleaved	fendre
+clothe	clad    clothed	clad    clothed	vêtir
+crow	crew  crowed	crowed	bonder
+dive	dove       dived	dived	plonger
+dream	dreamt  dreamed	dreamt  dreamed	rêver
+dwell	dwelt  dwelled	dwelt  dwelled	habiter
+fit	fit           fitted	fit           fitted	répondre à
+forecast	forecast  forecasted	forecast  forecasted	prévoir
+input	input  inputted	input  inputted	insérer
+kneel	knelt  kneeled	knelt  kneeled	s'agenouiller
+knit	knit      knitted	knit      knitted	tricoter
+lean	leant   leaned	leant   leaned	pencher
+leap	leapt   leaped	leapt   leaped	sauter
+learn	learnt  learned	learnt  learned	apprendre
+light	lit         lighted	lit         lighted	éclairer
+melt	melted	molten  melted	fondre
+mow	mowed	mown   mowed	tondre
+prove	proved	proven   proved	prouver
+quit	quit      quitted	quit      quitted	quitter
+rid	rid         ridded	rid         ridded	débarrasser
+saw	saw      sawed	sawn      sawed	scier
+shave	shaved	shaven  shaved	raser
+smell	smelt  smelled	smelt  smelled	sentir
+speed	sped  speeded	sped  speeded	aller vite
+spell	spelt  spelled	spelt  spelled	épeler
+spill	spilt      spilled	spilt      spilled	renverser
+spoil	spoilt  spoiled	spoilt  spoiled	gâcher
+sweat	sweat  sweated	sweat  sweated	suer
+swell	swelled	swollen  swelled	gonfler
+thrive	throve  thrived	thriven thrived	prospérer
+wake	woke   waked	woken   waked	réveiller
+wed	wed    wedded	wed    wedded	marier
+wet	wet      wetted	wet       wetted	mouiller

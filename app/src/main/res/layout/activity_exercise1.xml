@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_exercise1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/canard"
+    tools:context="com.example.mmtou.englishapplication.activity.Exercise1Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3050px"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verb"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true" />
+
+        <CheckBox
+            android:text="Simple Past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox2"
+            android:layout_below="@+id/checkBox"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/poudré" />
+
+        <CheckBox
+            android:text="Past participle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="105dp"
+            android:id="@+id/checkBox3"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:text="Simple Past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox5"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/poudré"
+            android:layout_below="@+id/checkBox4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Past participle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox6"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/checkBox5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Met"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verb3"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/checkBox6"
+            android:layout_alignLeft="@+id/verb2"
+            android:layout_alignStart="@+id/verb2" />
+
+        <CheckBox
+            android:text="Infinitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox7"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textColorLink="@color/font2"
+            android:textAlignment="center"
+            android:layout_below="@+id/verb3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Simple Past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox8"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/poudré"
+            android:layout_below="@+id/checkBox7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Past participle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox9"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/checkBox8" />
+
+        <CheckBox
+            android:text="Infinitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox10"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textColorLink="@color/font2"
+            android:textAlignment="center"
+            android:layout_below="@+id/verb4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Simple Past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox11"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/poudré"
+            android:layout_below="@+id/checkBox10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Past participle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox12"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/checkBox11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verb4"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/checkBox9"
+            android:layout_alignLeft="@+id/verb3"
+            android:layout_alignStart="@+id/verb3" />
+
+        <TextView
+            android:text="Have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verb5"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/checkBox12"
+            android:layout_alignLeft="@+id/verb4"
+            android:layout_alignStart="@+id/verb4" />
+
+        <CheckBox
+            android:text="Infinitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox13"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textColorLink="@color/font2"
+            android:textAlignment="center"
+            android:layout_below="@+id/verb5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Simple Past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox14"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/poudré"
+            android:layout_below="@+id/checkBox13"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Past participle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox15"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/checkBox14"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verb6"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/checkBox15"
+            android:layout_alignLeft="@+id/verb5"
+            android:layout_alignStart="@+id/verb5" />
+
+        <CheckBox
+            android:text="Infinitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox16"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textColorLink="@color/font2"
+            android:textAlignment="center"
+            android:layout_alignTop="@+id/verb6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <CheckBox
+            android:text="Simple Past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox17"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/poudré"
+            android:layout_below="@+id/checkBox16"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Past participle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox18"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/checkBox17"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verb7"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/checkBox18"
+            android:layout_alignLeft="@+id/verb5"
+            android:layout_alignStart="@+id/verb5" />
+
+        <CheckBox
+            android:text="Infinitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox19"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textColorLink="@color/font2"
+            android:textAlignment="center"
+            android:layout_alignTop="@+id/verb7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <CheckBox
+            android:text="Simple Past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox20"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/poudré"
+            android:layout_below="@+id/checkBox19"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Past participle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox21"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/checkBox20"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verb8"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/checkBox21"
+            android:layout_alignLeft="@+id/verb5"
+            android:layout_alignStart="@+id/verb5" />
+
+        <CheckBox
+            android:text="Infinitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox22"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textColorLink="@color/font2"
+            android:textAlignment="center"
+            android:layout_alignTop="@+id/verb8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <CheckBox
+            android:text="Simple Past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox23"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/poudré"
+            android:layout_below="@+id/checkBox22"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Past participle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox24"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/checkBox23"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verb9"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/checkBox24"
+            android:layout_alignLeft="@+id/verb5"
+            android:layout_alignStart="@+id/verb5" />
+
+        <CheckBox
+            android:text="Infinitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox25"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textColorLink="@color/font2"
+            android:textAlignment="center"
+            android:layout_alignTop="@+id/verb9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <CheckBox
+            android:text="Simple Past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox26"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/poudré"
+            android:layout_below="@+id/checkBox25"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Past participle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox27"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/checkBox26"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verb10"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/checkBox27"
+            android:layout_alignLeft="@+id/verb5"
+            android:layout_alignStart="@+id/verb5" />
+
+        <CheckBox
+            android:text="Infinitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox28"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textColorLink="@color/font2"
+            android:textAlignment="center"
+            android:layout_alignTop="@+id/verb10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <CheckBox
+            android:text="Simple Past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox29"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/poudré"
+            android:layout_below="@+id/checkBox28"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Past participle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox30"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/checkBox29"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:background="@color/font2"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_below="@+id/checkBox30"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:text="REset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/button4"
+            android:textSize="20sp"
+            android:textColor="@color/poudré"
+            android:background="@color/font2"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_toLeftOf="@+id/button2"
+            android:layout_toStartOf="@+id/button2" />
+
+        <CheckBox
+            android:text="Infinitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox4"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textColorLink="@color/font2"
+            android:textAlignment="center"
+            android:layout_below="@+id/verb2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:text="Infinitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textColorLink="@color/font2"
+            android:textAlignment="center"
+            android:layout_below="@+id/layout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="39dp" />
+
+        <TextView
+            android:text="Put"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verb2"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/checkBox3"
+            android:layout_alignLeft="@+id/verb"
+            android:layout_alignStart="@+id/verb" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:background="@color/font2"
+        android:id="@+id/layout1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Which Forms Is It ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textColor="@color/poudré"
+            android:textSize="30sp"
+            android:layout_marginTop="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Are the following forms of the irregular verbs used as Infinitive, Simple Past and/or Past participle ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rule"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
