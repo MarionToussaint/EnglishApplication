@@ -11,6 +11,7 @@ cut	cut	cut	couper
 do	did	done	faire
 draw	drew	drawn	dessiner
 drive	drove	driven	conduire
+eat	ate	eaten	manger
 fall	fell	fallen	tomber
 feel	felt	felt	ressentir
 find	found	found	trouver

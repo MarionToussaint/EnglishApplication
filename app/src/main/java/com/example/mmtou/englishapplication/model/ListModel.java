@@ -26,7 +26,6 @@ import java.util.HashMap;
 public class ListModel {
     public PopupWindow pw;
     private ArrayList<HashMap<String, String>> feedList= new ArrayList<HashMap<String, String>>();
-    public Button close;
     private ArrayList<TextView> listTextView = new ArrayList<TextView>();
     private StyleModel style = new StyleModel();
 
@@ -102,8 +101,7 @@ public class ListModel {
             ((TextView) pw.getContentView().findViewById(R.id.example1)).setText(definitionList[pos][1]);
             ((TextView) pw.getContentView().findViewById(R.id.example2)).setText(definitionList[pos][2]);
             ((TextView) pw.getContentView().findViewById(R.id.example3)).setText(definitionList[pos][3]);
-            close = (Button) popupView.findViewById(R.id.button6);
-            close.setOnClickListener(cancel);
+            popupView.setOnClickListener(cancel);
         }
         catch (Exception e){
             e.printStackTrace();

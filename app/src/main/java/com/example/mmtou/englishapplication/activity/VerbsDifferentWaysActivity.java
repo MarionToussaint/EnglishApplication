@@ -2,6 +2,8 @@ package com.example.mmtou.englishapplication.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -27,5 +29,14 @@ public class VerbsDifferentWaysActivity extends AppCompatActivity {
         SimpleAdapter simpleAdapter = new SimpleAdapter(this, feedList, R.layout.row_list, new String[]{"infinitive", "preterite", "pastParticiple", "translate"},
                         new int[]{R.id.infinitive1, R.id.preterite1, R.id.pastParticiple1, R.id.translate1});
         list.setAdapter(simpleAdapter);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                pos = position;
+                model.showPopup(VerbsDifferentWaysActivity.this,view,feedList,position,"definitionDiff.txt");
+
+            }
+        });
     }
 }

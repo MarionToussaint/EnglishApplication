@@ -11,6 +11,7 @@
         <activity android:name=".activity.OpenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -34,7 +35,8 @@
         <activity android:name=".activity.Exercise1Activity" />
         <activity android:name=".activity.Exercise1Correction" />
         <activity android:name=".activity.Exercise1ChoiceActivity" />
-        <activity android:name=".Exercise2Activity"></activity>
+        <activity android:name=".Exercise2Activity" />
+        <activity android:name=".Exercise2CorrectionActivity"></activity>
     </application>
 
 </manifest>

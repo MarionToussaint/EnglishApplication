@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -48,6 +49,13 @@ public class StyleModel {
         Typeface font = Typeface.createFromAsset(context.getAssets(),fontName);
         for(CheckBox txt : list){
             txt.setTypeface(font,Typeface.BOLD);
+        }
+    }
+
+    public void changeFontEdittext(String fontName, Context context,ArrayList<EditText> list){
+        Typeface font = Typeface.createFromAsset(context.getAssets(),fontName);
+        for(EditText txt : list){
+            txt.setTypeface(font);
         }
     }
 }

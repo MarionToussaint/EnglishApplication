@@ -69,7 +69,6 @@ public class Exercise1Correction extends AppCompatActivity {
         listCorrection.add((TextView)findViewById(R.id.correction9));
         listAnswer.add((TextView)findViewById(R.id.answer10));
         listCorrection.add((TextView)findViewById(R.id.correction10));
-
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise1Correction.this,listAnswer);
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise1Correction.this,listCorrection);
 

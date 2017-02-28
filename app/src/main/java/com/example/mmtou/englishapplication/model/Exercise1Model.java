@@ -27,8 +27,6 @@ public class Exercise1Model {
         int correct1 = 0;
         for (int i=0; i<correct.length;i++){
             if (correct[i]==answer[i]) {
-                System.out.println("Correct : " + correct[i]);
-                System.out.println("Answer : " + answer[i]);
                 correct1 += 1;
             }
         }
