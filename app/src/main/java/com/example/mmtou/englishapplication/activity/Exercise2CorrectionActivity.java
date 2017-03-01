@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.Exercice2ChoiceActivity;
 import com.example.mmtou.englishapplication.ExerciseChoiceActivity;
 import com.example.mmtou.englishapplication.R;
 import com.example.mmtou.englishapplication.model.Exercise2Model;

@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.Exercice2ChoiceActivity;
 import com.example.mmtou.englishapplication.ExpandableListViewAdapter;
 import com.example.mmtou.englishapplication.R;
 import com.example.mmtou.englishapplication.model.Exercise2Model;

@@ -1,4 +1,4 @@
-package com.example.mmtou.englishapplication;
+package com.example.mmtou.englishapplication.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.activity.Exercise2Activity;
+import com.example.mmtou.englishapplication.R;
 import com.example.mmtou.englishapplication.model.StyleModel;
 
 import java.util.ArrayList;

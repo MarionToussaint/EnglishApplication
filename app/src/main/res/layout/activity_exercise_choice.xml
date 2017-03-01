@@ -13,48 +13,6 @@
     tools:context="com.example.mmtou.englishapplication.ExerciseChoiceActivity">
 
     <RelativeLayout
-        android:layout_width="900px"
-        android:layout_height="200px"
-        android:background="@color/font2"
-        android:id="@+id/relativeLayout2"
-        android:layout_below="@+id/relativeLayout1"
-        android:layout_alignLeft="@+id/relativeLayout1"
-        android:layout_alignStart="@+id/relativeLayout1"
-        android:layout_marginTop="29dp">
-
-        <TextView
-            android:text="Find Missing Forms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/exercise1"
-            android:textSize="22sp"
-            android:textColor="@color/poudré"
-            android:textAlignment="center"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="900px"
-        android:layout_height="200px"
-        android:background="@color/font2"
-        android:id="@+id/relativeLayout1"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
-
-        <TextView
-            android:text="Which Form Is It ?"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/exercise0"
-            android:textAlignment="center"
-            android:textSize="22sp"
-            android:textColor="@color/poudré"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="600px"
         android:background="@color/font2"
@@ -89,30 +47,84 @@
             android:layout_centerHorizontal="true" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="900px"
-        android:layout_height="200px"
-        android:background="@color/font2"
-        android:id="@+id/relativeLayout3"
-        android:layout_marginTop="29dp"
-        android:layout_below="@+id/relativeLayout2"
-        android:layout_alignLeft="@+id/relativeLayout2"
-        android:layout_alignStart="@+id/relativeLayout2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-        <TextView
-            android:text="Verbs having different irregular forms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/exercise2"
-            android:textSize="22sp"
-            android:textColor="@color/poudré"
-            android:textAlignment="center"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000px"
+            android:orientation="vertical" >
 
+            <RelativeLayout
+                android:layout_width="900px"
+                android:layout_height="200px"
+                android:background="@color/font2"
+                android:id="@+id/relativeLayout3"
+                android:layout_marginTop="29dp"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_alignLeft="@+id/relativeLayout2"
+                android:layout_alignStart="@+id/relativeLayout2">
 
+                <TextView
+                    android:text="Where Is The Wrong Verb ?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exercise2"
+                    android:textSize="22sp"
+                    android:textColor="@color/poudré"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="900px"
+                android:layout_height="200px"
+                android:background="@color/font2"
+                android:id="@+id/relativeLayout2"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_alignLeft="@+id/relativeLayout1"
+                android:layout_alignStart="@+id/relativeLayout1"
+                android:layout_marginTop="29dp">
+
+                <TextView
+                    android:text="Find Missing Forms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exercise1"
+                    android:textSize="22sp"
+                    android:textColor="@color/poudré"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="900px"
+                android:layout_height="200px"
+                android:background="@color/font2"
+                android:id="@+id/relativeLayout1"
+                android:layout_marginTop="73dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:text="Which Form Is It ?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exercise0"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/poudré"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
 
 
 </RelativeLayout>
