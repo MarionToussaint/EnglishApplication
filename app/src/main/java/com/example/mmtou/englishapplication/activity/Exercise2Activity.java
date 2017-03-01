@@ -1,4 +1,4 @@
-package com.example.mmtou.englishapplication;
+package com.example.mmtou.englishapplication.activity;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -11,10 +11,9 @@ import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.activity.Exercise1Activity;
-import com.example.mmtou.englishapplication.activity.Exercise1ChoiceActivity;
-import com.example.mmtou.englishapplication.activity.Exercise1Correction;
-import com.example.mmtou.englishapplication.model.Exercise1Model;
+import com.example.mmtou.englishapplication.Exercice2ChoiceActivity;
+import com.example.mmtou.englishapplication.ExpandableListViewAdapter;
+import com.example.mmtou.englishapplication.R;
 import com.example.mmtou.englishapplication.model.Exercise2Model;
 import com.example.mmtou.englishapplication.model.StyleModel;
 
@@ -93,7 +92,7 @@ public class Exercise2Activity extends AppCompatActivity {
         listEditText.add(((EditText)findViewById(R.id.editText30)));
         style.changeFontEdittext("fonts/Aprikas_light_Demo.ttf",Exercise2Activity.this,listEditText);
 
-        model.setLevel(listTextView,model.listLevel1);
+        model.changeLevel(Exercice2ChoiceActivity.level,model.listLevel1,model.listLevel2,model.listLevel3,model.listLevel4,model.listLevel5,model.listLevel6,listTextView);
 
         Button check = (Button)findViewById(R.id.button2);
         style.changeButtonFont("fonts/Aprikas_light_Demo.ttf",Exercise2Activity.this,check);

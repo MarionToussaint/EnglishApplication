@@ -9,41 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/canard"
-    tools:context="com.example.mmtou.englishapplication.Exercise2Activity">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="600px"
-        android:background="@color/font2"
-        android:id="@+id/layout1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <TextView
-            android:text="Find the Missing Forms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/title"
-            android:textColor="@color/poudré"
-            android:textSize="30sp"
-            android:layout_marginTop="47dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:text="Put in the verbs in the correct forms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rule"
-            android:textColor="@color/poudré"
-            android:textAlignment="center"
-            android:layout_marginTop="36dp"
-            android:textSize="18sp"
-            android:layout_below="@+id/title"
-            android:layout_centerHorizontal="true" />
-
-    </RelativeLayout>
+    tools:context="com.example.mmtou.englishapplication.activity.Exercise2Activity">
 
 
     <ScrollView
@@ -104,7 +70,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText3"
                 android:layout_alignBottom="@+id/editText3"
@@ -149,7 +115,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText5"
                 android:layout_alignBottom="@+id/editText5"
@@ -194,7 +160,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText7"
                 android:layout_alignBottom="@+id/editText7"
@@ -239,7 +205,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText9"
                 android:layout_alignBottom="@+id/editText9"
@@ -284,7 +250,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText11"
                 android:layout_alignBottom="@+id/editText11"
@@ -329,7 +295,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText13"
                 android:layout_alignBottom="@+id/editText13"
@@ -374,7 +340,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText15"
                 android:layout_alignBottom="@+id/editText15"
@@ -419,7 +385,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText17"
                 android:layout_alignBottom="@+id/editText17"
@@ -464,7 +430,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText19"
                 android:layout_alignBottom="@+id/editText19"
@@ -509,7 +475,7 @@
             android:textSize="18sp"
             android:textColor="@color/poudré"
             android:textAlignment="center"
-            android:textAllCaps="false"
+            android:textAllCaps="true"
             android:textStyle="normal|bold"
             android:layout_alignBaseline="@+id/editText21"
             android:layout_alignBottom="@+id/editText21"
@@ -554,7 +520,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText23"
                 android:layout_alignBottom="@+id/editText23"
@@ -599,7 +565,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText25"
                 android:layout_alignBottom="@+id/editText25"
@@ -644,7 +610,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText27"
                 android:layout_alignBottom="@+id/editText27"
@@ -689,7 +655,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText29"
                 android:layout_alignBottom="@+id/editText29"
@@ -778,7 +744,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
                 android:textAlignment="center"
-                android:textAllCaps="false"
+                android:textAllCaps="true"
                 android:textStyle="normal|bold"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
@@ -786,5 +752,39 @@
 
         </RelativeLayout>
     </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:background="@color/font2"
+        android:id="@+id/layout1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Find The Missing Forms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textColor="@color/poudré"
+            android:textSize="30sp"
+            android:layout_marginTop="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Put in the verbs in the correct forms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rule"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:layout_marginTop="36dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

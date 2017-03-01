@@ -43,7 +43,7 @@ public class ExerciseChoiceActivity extends AppCompatActivity {
 
         layout2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(ExerciseChoiceActivity.this,Exercise2Activity.class));
+                startActivity(new Intent(ExerciseChoiceActivity.this,Exercice2ChoiceActivity.class));
             }
         });
 
