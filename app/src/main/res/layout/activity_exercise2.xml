@@ -691,36 +691,6 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="8"
-                android:id="@+id/editText4"
-                android:textSize="18sp"
-                android:textColor="@color/poudré"
-                android:hint="Past Participle"
-                android:textColorHint="@color/font2"
-                android:textStyle="normal|bold"
-                android:layout_below="@+id/editText2"
-                android:layout_alignLeft="@+id/editText2"
-                android:layout_alignStart="@+id/editText2" />
-
-            <EditText
-                android:layout_width="350px"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="8"
-                android:id="@+id/editText6"
-                android:textSize="18sp"
-                android:textColor="@color/poudré"
-                android:hint="Past Participle"
-                android:textColorHint="@color/font2"
-                android:textStyle="normal|bold"
-                android:layout_below="@+id/editText4"
-                android:layout_alignLeft="@+id/editText4"
-                android:layout_alignStart="@+id/editText4" />
-
-            <EditText
-                android:layout_width="350px"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="8"
                 android:id="@+id/editText"
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
@@ -739,6 +709,36 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="8"
+                android:id="@+id/editText6"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:hint="Past Participle"
+                android:textColorHint="@color/font2"
+                android:textStyle="normal|bold"
+                android:layout_below="@+id/editText4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="8"
+                android:id="@+id/editText4"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:hint="Past Participle"
+                android:textColorHint="@color/font2"
+                android:textStyle="normal|bold"
+                android:layout_below="@+id/editText2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="8"
                 android:id="@+id/editText2"
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
@@ -747,8 +747,10 @@
                 android:textStyle="normal|bold"
                 android:layout_alignBaseline="@+id/editText"
                 android:layout_alignBottom="@+id/editText"
-                android:layout_toRightOf="@+id/editText"
-                android:layout_toEndOf="@+id/editText" />
+                android:layout_alignRight="@+id/button2"
+                android:layout_alignEnd="@+id/button2"
+                android:layout_alignLeft="@+id/editText4"
+                android:layout_alignStart="@+id/editText4" />
 
         </RelativeLayout>
     </ScrollView>

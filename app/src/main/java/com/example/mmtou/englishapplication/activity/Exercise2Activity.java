@@ -30,14 +30,12 @@ public class Exercise2Activity extends AppCompatActivity {
     private StyleModel style = new StyleModel();
     private Exercise2Model model = new Exercise2Model();
     public static String[] i ;
-    public static int[] k;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise2);
 
-        Typeface font = Typeface.createFromAsset(getAssets(),"fonts/Aprikas_light_Demo.ttf");
         listTitle.add(((TextView)findViewById(R.id.title)));
         listTitle.add(((TextView)findViewById(R.id.rule)));
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise2Activity.this,listTitle);

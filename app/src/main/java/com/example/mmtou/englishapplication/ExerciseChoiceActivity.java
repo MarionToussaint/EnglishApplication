@@ -48,5 +48,11 @@ public class ExerciseChoiceActivity extends AppCompatActivity {
             }
         });
 
+        layout3.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(ExerciseChoiceActivity.this,Exercise3Activity.class));
+            }
+        });
+
     }
 }

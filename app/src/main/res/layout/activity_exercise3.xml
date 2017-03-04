@@ -690,15 +690,18 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="8"
-                android:id="@+id/editText4"
+                android:id="@+id/editText"
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
-                android:hint="Past Participle"
+                android:hint="Simple Past"
                 android:textColorHint="@color/font2"
                 android:textStyle="normal|bold"
-                android:layout_below="@+id/editText2"
-                android:layout_alignLeft="@+id/editText2"
-                android:layout_alignStart="@+id/editText2" />
+                android:layout_alignBaseline="@+id/verb"
+                android:layout_alignBottom="@+id/verb"
+                android:layout_toRightOf="@+id/verb"
+                android:layout_toEndOf="@+id/verb"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
 
             <EditText
                 android:layout_width="350px"
@@ -712,26 +715,23 @@
                 android:textColorHint="@color/font2"
                 android:textStyle="normal|bold"
                 android:layout_below="@+id/editText4"
-                android:layout_alignLeft="@+id/editText4"
-                android:layout_alignStart="@+id/editText4" />
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
             <EditText
                 android:layout_width="350px"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="8"
-                android:id="@+id/editText"
+                android:id="@+id/editText4"
                 android:textSize="18sp"
                 android:textColor="@color/poudré"
-                android:hint="Simple Past"
+                android:hint="Past Participle"
                 android:textColorHint="@color/font2"
                 android:textStyle="normal|bold"
-                android:layout_alignBaseline="@+id/verb"
-                android:layout_alignBottom="@+id/verb"
-                android:layout_toLeftOf="@+id/button4"
-                android:layout_toStartOf="@+id/button4"
-                android:layout_marginRight="11dp"
-                android:layout_marginEnd="11dp" />
+                android:layout_below="@+id/editText2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
             <EditText
                 android:layout_width="350px"
@@ -747,7 +747,9 @@
                 android:layout_alignBaseline="@+id/editText"
                 android:layout_alignBottom="@+id/editText"
                 android:layout_alignRight="@+id/button2"
-                android:layout_alignEnd="@+id/button2" />
+                android:layout_alignEnd="@+id/button2"
+                android:layout_alignLeft="@+id/editText4"
+                android:layout_alignStart="@+id/editText4" />
 
         </RelativeLayout>
     </ScrollView>
@@ -762,7 +764,7 @@
         android:layout_alignParentStart="true">
 
         <TextView
-            android:text="Find The Missing Forms"
+            android:text="Where Is The Wrong Verb ?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/title"
@@ -770,10 +772,11 @@
             android:textSize="30sp"
             android:layout_marginTop="47dp"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
 
         <TextView
-            android:text="Put in the verbs in the correct forms"
+            android:text="Put in the missing forms of the verbs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rule"

@@ -140,7 +140,6 @@ public class Exercise2Model {
         else {
             x = ("  ");
         }
-        //System.out.println("Valeur de X : "+ x);
         return x;
     }
 
@@ -161,14 +160,6 @@ public class Exercise2Model {
             if ((correct[i][1].equals(s[j]) && (correct[i][2].equals(s[j+1])))){
                 ans.get(i).setText(correct[i][0] + "-> " + s[j] + " -> " + s[j+1]);
                 cor.get(i).setText("");
-            }
-            else if (!(correct[i][1].equals(s[j]) && (correct[i][2].equals(s[j+1])))){
-                ans.get(i).setText(correct[i][0] + " -> " + s[j] + " -> " );
-                cor.get(i).setText("Correction : " + correct[i][0] + " -> "+ correct[i][1] + " -> " +correct[i][2]);
-            }
-            else if ((correct[i][1].equals(s[j]) && !(correct[i][2].equals(s[j+1])))){
-                ans.get(i).setText(correct[i][0] +" -> " + " " + " -> " + s[j+1]);
-                cor.get(i).setText("Correction : " + correct[i][0] + " -> "+ correct[i][1] + " -> " +correct[i][2]);
             }
             else {
                 ans.get(i).setText(correct[i][0] +" -> " + s[j] + " -> " + s[j + 1]);
