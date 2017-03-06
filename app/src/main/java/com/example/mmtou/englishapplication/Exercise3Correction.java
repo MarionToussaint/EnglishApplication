@@ -7,10 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.activity.Exercice2ChoiceActivity;
-import com.example.mmtou.englishapplication.activity.Exercise2Activity;
-import com.example.mmtou.englishapplication.activity.Exercise2CorrectionActivity;
-import com.example.mmtou.englishapplication.model.Exercise2Model;
+import com.example.mmtou.englishapplication.activity.Exercise3Activity;
+import com.example.mmtou.englishapplication.activity.Exercise3ChoiceActivity;
 import com.example.mmtou.englishapplication.model.Exercise3Model;
 import com.example.mmtou.englishapplication.model.StyleModel;
 
@@ -86,16 +84,17 @@ public class Exercise3Correction extends AppCompatActivity {
 
         model.setLevel(listTextView,model.listLevel1,model.level1);
 
-        model.verify(listAnswer,listCorrection,model.listLevel1,Exercise3Activity.i,model.level1);
-        //int score = model.scoreLevel(Exercice2ChoiceActivity.level,Exercise2Activity.i, model.listLevel1,model.listLevel2,model.listLevel3,model.listLevel4,model.listLevel5,model.listLevel6);
-        //((TextView)findViewById(R.id.score)).setText("Your Score is " + score + "%");
+        model.verifyLevel(listAnswer,listCorrection, Exercise3ChoiceActivity.level,Exercise3Activity.i,model.listLevel1,model.listLevel2,model.listLevel3,model.listLevel4, model.level1,model.level2,model.level3,model.level4);
+
+        int score = model.scoreLevel(Exercise3ChoiceActivity.level,Exercise3Activity.i, model.listLevel1,model.listLevel2,model.listLevel3,model.listLevel4,model.level1,model.level2,model.level3,model.level4);
+        ((TextView)findViewById(R.id.score)).setText("Your Score is " + score + "%");
 
         Button menu = (Button)findViewById(R.id.button3);
         style.changeButtonFont("fonts/Aprikas_light_Demo.ttf",Exercise3Correction.this,menu);
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Exercise3Correction.this,ExerciseChoiceActivity.class));
+                startActivity(new Intent(Exercise3Correction.this,Exercise3ChoiceActivity.class));
             }
         });
     }

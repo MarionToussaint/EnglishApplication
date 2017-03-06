@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_exercise3_choice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/canard"
+    tools:context="com.example.mmtou.englishapplication.activity.Exercise3ChoiceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:background="@color/font2"
+        android:id="@+id/layout0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:text="Exercises"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title1"
+            android:textAlignment="center"
+            android:textColor="@color/poudré"
+            android:textSize="34sp"
+            android:layout_marginTop="51dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Where Is The Wrong Verb ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title3"
+            android:textColor="@color/poudré"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/title1"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/layout0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1200px">
+
+
+            <RelativeLayout
+                android:layout_width="700px"
+                android:layout_height="200px"
+                android:background="@color/font2"
+                android:id="@+id/relativeLayout3"
+                android:layout_marginTop="29dp"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_alignLeft="@+id/relativeLayout2"
+                android:layout_alignStart="@+id/relativeLayout2">
+
+                <TextView
+                    android:text="Level 3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exercise2"
+                    android:textSize="22sp"
+                    android:textColor="@color/poudré"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="700px"
+                android:layout_height="200px"
+                android:background="@color/font2"
+                android:id="@+id/relativeLayout2"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_alignLeft="@+id/relativeLayout1"
+                android:layout_alignStart="@+id/relativeLayout1"
+                android:layout_marginTop="29dp">
+
+                <TextView
+                    android:text="Level 2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exercise1"
+                    android:textSize="22sp"
+                    android:textColor="@color/poudré"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="700px"
+                android:layout_height="200px"
+                android:background="@color/font2"
+                android:id="@+id/relativeLayout4"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_alignLeft="@+id/relativeLayout3"
+                android:layout_alignStart="@+id/relativeLayout3">
+
+                <TextView
+                    android:text="Level 4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exercise3"
+                    android:textSize="22sp"
+                    android:textColor="@color/poudré"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="700px"
+                android:layout_height="200px"
+                android:background="@color/font2"
+                android:id="@+id/relativeLayout1"
+                android:layout_marginTop="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:text="Level 1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exercise0"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/poudré"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

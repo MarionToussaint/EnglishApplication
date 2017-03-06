@@ -38,8 +38,9 @@
         <activity android:name=".activity.Exercise2Activity" />
         <activity android:name=".activity.Exercise2CorrectionActivity" />
         <activity android:name=".activity.Exercice2ChoiceActivity" />
-        <activity android:name=".Exercise3Activity" />
-        <activity android:name=".Exercise3Correction"></activity>
+        <activity android:name=".activity.Exercise3Activity" />
+        <activity android:name=".Exercise3Correction" />
+        <activity android:name=".activity.Exercise3ChoiceActivity"></activity>
     </application>
 
 </manifest>

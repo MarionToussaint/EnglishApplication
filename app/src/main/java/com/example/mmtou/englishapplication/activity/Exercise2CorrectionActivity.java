@@ -94,7 +94,7 @@ public class Exercise2CorrectionActivity extends AppCompatActivity {
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Exercise2CorrectionActivity.this,ExerciseChoiceActivity.class));
+                startActivity(new Intent(Exercise2CorrectionActivity.this,Exercice2ChoiceActivity.class));
             }
         });
     }

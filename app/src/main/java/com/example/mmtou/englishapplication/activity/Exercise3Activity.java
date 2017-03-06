@@ -1,4 +1,4 @@
-package com.example.mmtou.englishapplication;
+package com.example.mmtou.englishapplication.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,9 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.activity.Exercise2Activity;
-import com.example.mmtou.englishapplication.activity.Exercise2CorrectionActivity;
-import com.example.mmtou.englishapplication.model.Exercise2Model;
+import com.example.mmtou.englishapplication.Exercise3Correction;
+import com.example.mmtou.englishapplication.R;
 import com.example.mmtou.englishapplication.model.Exercise3Model;
 import com.example.mmtou.englishapplication.model.StyleModel;
 
@@ -82,8 +81,7 @@ public class Exercise3Activity extends AppCompatActivity {
         listEditText.add(((EditText)findViewById(R.id.editText30)));
         style.changeFontEdittext("fonts/Aprikas_light_Demo.ttf",Exercise3Activity.this,listEditText);
 
-        model.setLevel(listTextView,model.listLevel1,model.level1);
-        model.setEditText(listEditText,model.level1);
+        model.changeLevel(Exercise3ChoiceActivity.level,model.listLevel1,model.listLevel2,model.listLevel3,model.listLevel4,model.level1,model.level2,model.level3,model.level4,listTextView,listEditText);
 
         Button check = (Button)findViewById(R.id.button2);
         style.changeButtonFont("fonts/Aprikas_light_Demo.ttf",Exercise3Activity.this,check);
