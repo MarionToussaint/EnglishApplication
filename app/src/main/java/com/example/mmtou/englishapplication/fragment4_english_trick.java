@@ -47,7 +47,7 @@ public class fragment4_english_trick extends AppCompatActivity {
         style.changeFont("fonts/LemonMilk.ttf",fragment4_english_trick.this,listTextView);
 
         title.setText("Verbs With –N In The Past Participle");
-        text.setText("These verbs are a little more complicated, as they have –n in the past participle form. There are a few different groups of verbs :");
+        text.setText("These verbs are a little more complicated, as they have –n in the past participle form; There are a few different groups of verbs :");
         ssCat.setText("With “O” In The Past And Past Participle");
         exemple2.setText("break\t\tbroke\t\tbroken"+"\n" + "choose\t\tchose\t\tchosen" +"\n"+ "forget\t\tforgot\t\tforgotten"
         + "\n"+"freeze\t\tfroze\t\tfrozen\n" + "get\t\tgot\t\tgotten\n" + "speak\t\tspoke\t\tspoken\n" + "steal\t\tstole\t\tstolen\n"

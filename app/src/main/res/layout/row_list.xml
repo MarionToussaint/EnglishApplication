@@ -10,13 +10,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:layout_weight="1.1"
+        android:layout_weight="1.06"
         android:gravity="center"
         android:padding="8dp"
         android:textStyle="normal|bold"
         android:textColor="@color/poudré"
         android:textAlignment="center"
-        android:textSize="12sp" />
+        android:textSize="11sp" />
 
 
     <TextView

@@ -54,7 +54,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="800px"
+            android:layout_height="1300px"
             android:orientation="vertical"
             android:layout_marginTop="0dp"
             android:layout_below="@+id/linear1"
@@ -84,7 +84,8 @@
                 android:layout_marginStart="50dp"
                 android:layout_below="@+id/expandableListView"
                 android:layout_toRightOf="@+id/verb"
-                android:layout_toEndOf="@+id/verb" />
+                android:layout_toEndOf="@+id/verb"
+                android:background="@color/canard"/>
 
             <TextView
                 android:text="Have"
@@ -100,7 +101,8 @@
                 android:layout_marginStart="50dp"
                 android:layout_below="@+id/expandableListView"
                 android:layout_toRightOf="@+id/verb1"
-                android:layout_toEndOf="@+id/verb1" />
+                android:layout_toEndOf="@+id/verb1"
+                android:background="@color/canard"/>
 
             <TextView
                 android:text="Have"
@@ -116,7 +118,8 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginStart="50dp"
                 android:layout_toRightOf="@+id/verb2"
-                android:layout_toEndOf="@+id/verb2"/>
+                android:layout_toEndOf="@+id/verb2"
+                android:background="@color/canard"/>
 
             <TextView
                 android:text="Have"
@@ -132,22 +135,8 @@
                 android:layout_marginStart="21dp"
                 android:layout_below="@+id/expandableListView"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:text="Have"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/verb4"
-                android:textSize="18sp"
-                android:textColor="@color/poudré"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textStyle="normal|bold"
-                android:layout_below="@+id/verb"
-                android:layout_toLeftOf="@+id/verb1"
-                android:layout_toStartOf="@+id/verb1"
-                android:layout_marginTop="30dp" />
+                android:layout_alignParentStart="true"
+                android:background="@color/canard"/>
 
             <TextView
                 android:text="Have"
@@ -163,6 +152,531 @@
                 android:layout_alignBottom="@+id/verb4"
                 android:layout_alignLeft="@+id/verb1"
                 android:layout_alignStart="@+id/verb1" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb6"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb4"
+                android:layout_alignBottom="@+id/verb4"
+                android:layout_alignLeft="@+id/verb2"
+                android:layout_alignStart="@+id/verb2" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb7"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb4"
+                android:layout_alignBottom="@+id/verb4"
+                android:layout_alignLeft="@+id/verb3"
+                android:layout_alignStart="@+id/verb3" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb9"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb8"
+                android:layout_alignBottom="@+id/verb8"
+                android:layout_alignLeft="@+id/verb1"
+                android:layout_alignStart="@+id/verb1" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb10"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb8"
+                android:layout_alignBottom="@+id/verb8"
+                android:layout_alignLeft="@+id/verb2"
+                android:layout_alignStart="@+id/verb2" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb11"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb8"
+                android:layout_alignBottom="@+id/verb8"
+                android:layout_alignLeft="@+id/verb3"
+                android:layout_alignStart="@+id/verb3" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb12"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/verb8"
+                android:layout_alignLeft="@+id/verb"
+                android:layout_alignStart="@+id/verb" /> />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb13"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb12"
+                android:layout_alignBottom="@+id/verb12"
+                android:layout_alignLeft="@+id/verb1"
+                android:layout_alignStart="@+id/verb1" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb14"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb12"
+                android:layout_alignBottom="@+id/verb12"
+                android:layout_alignLeft="@+id/verb2"
+                android:layout_alignStart="@+id/verb2" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb15"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb12"
+                android:layout_alignBottom="@+id/verb12"
+                android:layout_alignLeft="@+id/verb3"
+                android:layout_alignStart="@+id/verb3" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb17"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb16"
+                android:layout_alignBottom="@+id/verb16"
+                android:layout_alignLeft="@+id/verb1"
+                android:layout_alignStart="@+id/verb1" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb18"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb16"
+                android:layout_alignBottom="@+id/verb16"
+                android:layout_alignLeft="@+id/verb2"
+                android:layout_alignStart="@+id/verb2" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb19"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb16"
+                android:layout_alignBottom="@+id/verb16"
+                android:layout_alignLeft="@+id/verb3"
+                android:layout_alignStart="@+id/verb3" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb4"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/verb"
+                android:layout_alignLeft="@+id/verb"
+                android:layout_alignStart="@+id/verb" />
+
+            <TextView
+            android:text="Have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verb16"
+            android:textSize="18sp"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/verb12"
+            android:layout_alignLeft="@+id/verb"
+            android:layout_alignStart="@+id/verb" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb20"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/verb16"
+                android:layout_alignLeft="@+id/verb"
+                android:layout_alignStart="@+id/verb" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb21"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb20"
+                android:layout_alignBottom="@+id/verb20"
+                android:layout_alignLeft="@+id/verb1"
+                android:layout_alignStart="@+id/verb1" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb22"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb20"
+                android:layout_alignBottom="@+id/verb20"
+                android:layout_alignLeft="@+id/verb2"
+                android:layout_alignStart="@+id/verb2" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb23"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb20"
+                android:layout_alignBottom="@+id/verb20"
+                android:layout_alignLeft="@+id/verb3"
+                android:layout_alignStart="@+id/verb3" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb24"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/verb20"
+                android:layout_alignLeft="@+id/verb"
+                android:layout_alignStart="@+id/verb" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb25"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb24"
+                android:layout_alignBottom="@+id/verb24"
+                android:layout_alignLeft="@+id/verb1"
+                android:layout_alignStart="@+id/verb1" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb26"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb24"
+                android:layout_alignBottom="@+id/verb24"
+                android:layout_alignLeft="@+id/verb2"
+                android:layout_alignStart="@+id/verb2" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb27"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb24"
+                android:layout_alignBottom="@+id/verb24"
+                android:layout_alignLeft="@+id/verb3"
+                android:layout_alignStart="@+id/verb3" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb28"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/verb24"
+                android:layout_alignLeft="@+id/verb"
+                android:layout_alignStart="@+id/verb" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb29"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb28"
+                android:layout_alignBottom="@+id/verb28"
+                android:layout_alignLeft="@+id/verb1"
+                android:layout_alignStart="@+id/verb1" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb30"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb28"
+                android:layout_alignBottom="@+id/verb28"
+                android:layout_alignLeft="@+id/verb2"
+                android:layout_alignStart="@+id/verb2" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb31"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb28"
+                android:layout_alignBottom="@+id/verb28"
+                android:layout_alignLeft="@+id/verb3"
+                android:layout_alignStart="@+id/verb3" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb36"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/verb32"
+                android:layout_alignLeft="@+id/verb"
+                android:layout_alignStart="@+id/verb" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb37"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb36"
+                android:layout_alignBottom="@+id/verb36"
+                android:layout_alignLeft="@+id/verb1"
+                android:layout_alignStart="@+id/verb1" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb38"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb36"
+                android:layout_alignBottom="@+id/verb36"
+                android:layout_alignLeft="@+id/verb2"
+                android:layout_alignStart="@+id/verb2" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb39"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb36"
+                android:layout_alignBottom="@+id/verb36"
+                android:layout_alignLeft="@+id/verb3"
+                android:layout_alignStart="@+id/verb3" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb32"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/verb28"
+                android:layout_alignLeft="@+id/verb"
+                android:layout_alignStart="@+id/verb" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb33"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb32"
+                android:layout_alignBottom="@+id/verb32"
+                android:layout_alignLeft="@+id/verb1"
+                android:layout_alignStart="@+id/verb1" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb34"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb32"
+                android:layout_alignBottom="@+id/verb32"
+                android:layout_alignLeft="@+id/verb2"
+                android:layout_alignStart="@+id/verb2" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb35"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/verb32"
+                android:layout_alignBottom="@+id/verb32"
+                android:layout_alignLeft="@+id/verb3"
+                android:layout_alignStart="@+id/verb3" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb8"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/verb4"
+                android:layout_alignLeft="@+id/verb"
+                android:layout_alignStart="@+id/verb" /> />
         </RelativeLayout>
     </ScrollView>
 
