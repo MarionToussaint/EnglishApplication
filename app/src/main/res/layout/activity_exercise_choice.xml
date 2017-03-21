@@ -107,6 +107,28 @@
                 android:layout_width="900px"
                 android:layout_height="200px"
                 android:background="@color/font2"
+                android:id="@+id/relativeLayout5"
+                android:layout_marginTop="29dp"
+                android:layout_below="@+id/relativeLayout4"
+                android:layout_alignLeft="@+id/relativeLayout4"
+                android:layout_alignStart="@+id/relativeLayout4">
+
+                <TextView
+                    android:text="True or False ?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exercise4"
+                    android:textSize="22sp"
+                    android:textColor="@color/poudré"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="900px"
+                android:layout_height="200px"
+                android:background="@color/font2"
                 android:id="@+id/relativeLayout2"
                 android:layout_below="@+id/relativeLayout1"
                 android:layout_alignLeft="@+id/relativeLayout1"

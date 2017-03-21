@@ -41,7 +41,8 @@
         <activity android:name=".activity.Exercise3Activity" />
         <activity android:name=".Exercise3Correction" />
         <activity android:name=".activity.Exercise3ChoiceActivity" />
-        <activity android:name=".Exercise4Activity"></activity>
+        <activity android:name=".Exercise4Activity" />
+        <activity android:name=".Exercise5Activity"></activity>
     </application>
 
 </manifest>

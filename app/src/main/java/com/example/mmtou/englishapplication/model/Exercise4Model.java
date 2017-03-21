@@ -5,10 +5,16 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.mmtou.englishapplication.Exercise4Activity;
 import com.example.mmtou.englishapplication.ExerciseChoiceActivity;
 import com.example.mmtou.englishapplication.activity.Exercise1ChoiceActivity;
 
@@ -20,87 +26,126 @@ import java.util.StringTokenizer;
 /**
  * Created by mmtou on 08/03/2017.
  */
-
 public class Exercise4Model {
-    public boolean click = false;
-    public int s=0;
-    SharedPreferences sharedpreferences;
     public String[] listLevel1 = new String[]{"read","feel", "play", "see",
             "listen", "do", "go", "make", "know", "help", "say", "think",
             "like", "write", "forget", "eat","take", "bring", "cut", "clean",
             "watch", "be", "have", "meet", "put", "buy", "cook", "teach",
             "catch", "find", "answer", "lose","want", "tell", "win", "sit",
             "sell", "build", "drink", "open"};
+    public String[] answerList = new String[]{"read","do","help","like","eat","clean","put","teach","want","sell"};
 
     public Exercise4Model(){
     }
 
-    public void setLevel(ArrayList<TextView> l, String[] s){
-        int i = 0;
-        for (TextView t : l){
-            t.setText(s[i]);
-            i++;
+    public void setLevel(String[] s,ArrayList<TextView> l){
+        int j=0;
+        for (int i=0; i<l.size()-2;i++){
+            l.get(i).setText(s[j]);
+            j++;
         }
     }
 
-    public int clickVerb(final TextView t1,final TextView t2,final TextView t3,final TextView t4){
-        t1.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                if (click == false) {
-                    click = true;
-                    t1.setTextColor(0xFFE5FFFA);
+    public void Clickable(final CheckBox c1,final CheckBox c2, final CheckBox c3, final CheckBox c4){
+        c1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if (isChecked){
+                    c2.setClickable(false);
+                    c3.setClickable(false);
+                    c4.setClickable(false);
                 }
             }
         });
-        t2.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                if (click == false) {
-                    click = true;
-                    t2.setTextColor(0xFFE5FFFA);
+        c2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if (isChecked){
+                    c1.setClickable(false);
+                    c3.setClickable(false);
+                    c4.setClickable(false);
                 }
             }
         });
-        t3.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                if (click == false) {
-                    click = true;
-                    t3.setTextColor(0xFFE5FFFA);
+        c3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if (isChecked){
+                    c1.setClickable(false);
+                    c2.setClickable(false);
+                    c4.setClickable(false);
                 }
             }
         });
-        t4.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                if (click == false) {
-                    click = true;
-                    t4.setTextColor(0xFFE5FFFA);
+        c4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if (isChecked){
+                    c1.setClickable(false);
+                    c2.setClickable(false);
+                    c3.setClickable(false);
                 }
             }
         });
-        System.out.println("NIQUE13 /" +t1.getTextColors());
-        System.out.println("NIQUE11 /" +t2.getTextColors().getDefaultColor());
-        return s;
     }
 
-    public void clickVerbGlobal(ArrayList<TextView> l){
-        int i = 0;
-        int size = (l.size())/4;
-        for (int j=0;j < size; j++){
-            clickVerb(l.get(j),l.get(j+1),l.get(j+2),l.get(j+3));
-            click = false;
-            i = i + 4;
+    public String answerChecked(CheckBox box1, CheckBox box2, CheckBox box3,CheckBox box4){
+        String answer = "";
+        if ((!box1.isChecked()) && (!box2.isChecked()) && (!box3.isChecked()) && (!box4.isChecked()))
+            answer = "No Answer";
+        else if (box1.isChecked() && (!box2.isChecked()) && (!box3.isChecked()) && (!box4.isChecked()))
+            answer = (String) box1.getText();
+        else if (box2.isChecked() && (!box1.isChecked()) && (!box3.isChecked()) && (!box4.isChecked()))
+            answer = (String) box2.getText();
+        else if (box3.isChecked() && (!box2.isChecked()) && (!box1.isChecked()) && (!box4.isChecked()))
+            answer = (String) box3.getText();
+        else if ((!box1.isChecked()) && (!box2.isChecked()) && (!box3.isChecked()) && (box4.isChecked()))
+            answer = (String) box4.getText();
+
+        return answer;
+    }
+
+    public void check(Button b,final ArrayList<CheckBox> l){
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String answer = answerChecked(l.get(0),l.get(1),l.get(2),l.get(3));
+                System.out.println("Answer is : "+answer);
+            }
+        });
+    }
+
+
+
+        /*if (i < (list.length - 1)) {
+            if (((list[i][1]).equals(p1.getText().toString())) && ((list[i][2]).equals(pp1.getText().toString()))) {
+                Toast.makeText(getApplicationContext(), "Correct Answer", Toast.LENGTH_SHORT).show();
+                point ++;
+            } else {
+                Toast.makeText(getApplicationContext(), "Wrong Answer", Toast.LENGTH_SHORT).show();
+                correction = ((list[i][0]) + "  |  " + (list[i][1]) + "  |  " + (list[i][2]) + "  |  " + (list[i][3]));
+                showPopup();
+            }
+            p1.getText().clear();
+            pp1.getText().clear();
+            verb.setText(list[i+1][0]);
+            page.setText((i+2) + " / " + ListVerb.listLevel1.length);
+        } else if (i == (list.length - 1)) {
+            if (((list[i][1]).equals(p1.getText().toString())) && ((list[i][2]).equals(pp1.getText().toString()))) {
+                Toast.makeText(getApplicationContext(), "Correct Answer", Toast.LENGTH_SHORT).show();
+                point++;
+            } else {
+                Toast.makeText(getApplicationContext(), "Wrong Answer", Toast.LENGTH_SHORT).show();
+                correction = ((list[i][0]) + "  |  " + (list[i][1]) + "  |  " + (list[i][2]) + "  |  " + (list[i][3]));
+                showPopup();
+            }
+        } else {
+            startActivity(new Intent(Level1EasyActivity.this, EasyActivity.class));
         }
-    }
-
-    /*public int verbChoose(final TextView t1,final TextView t2,final TextView t3,final TextView t4){
-        int s = 0;
-        System.out.println("C1 :"+t1.getCurrentTextColor()+" C2 :"+t2.getCurrentTextColor());
-        if (t1.getCurrentTextColor()==0xFFE5FFFA){s = 1;}
-        else if (t2.getCurrentTextColor()==0xFFE5FFFA){s = 2;}
-        else if (t3.getCurrentTextColor()==0xFFE5FFFA){s = 3;}
-        else if (t4.getCurrentTextColor()==0xFFE5FFFA){s = 4;}
-        else {s = 0;}
-        System.out.println("NIQUE /" +s);
-        return s;
     }*/
 
 

@@ -9,7 +9,7 @@ crow	crew  crowed	crowed	bonder
 dive	dove       dived	dived	plonger
 dream	dreamt  dreamed	dreamt  dreamed	rêver
 dwell	dwelt  dwelled	dwelt  dwelled	habiter
-fit	fit           fitted	fit           fitted	répondre à
+fit	fit            fitted	fit            fitted	répondre à
 forecast	forecast  forecasted	forecast  forecasted	prévoir
 input	input  inputted	input  inputted	insérer
 kneel	knelt  kneeled	knelt  kneeled	s'agenouiller
