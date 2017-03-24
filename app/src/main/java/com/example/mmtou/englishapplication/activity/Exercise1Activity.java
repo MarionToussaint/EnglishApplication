@@ -18,6 +18,13 @@ public class Exercise1Activity extends AppCompatActivity {
     private ArrayList<TextView> listTitle = new ArrayList<TextView>();
     private ArrayList<TextView> listTextView = new ArrayList<TextView>();
     private ArrayList<CheckBox> listCheckBox = new ArrayList<CheckBox>();
+    private int[] check = new int[]{R.id.checkBox, R.id.checkBox2,R.id.checkBox3,R.id.checkBox4,R.id.checkBox5,
+            R.id.checkBox6,R.id.checkBox7,R.id.checkBox8,R.id.checkBox9,R.id.checkBox10,
+            R.id.checkBox11,R.id.checkBox12,R.id.checkBox13,R.id.checkBox14,R.id.checkBox15,
+            R.id.checkBox16,R.id.checkBox17,R.id.checkBox18,R.id.checkBox19,R.id.checkBox20,
+            R.id.checkBox21,R.id.checkBox22,R.id.checkBox23,R.id.checkBox24,R.id.checkBox25,
+            R.id.checkBox26,R.id.checkBox27,R.id.checkBox28,R.id.checkBox29,R.id.checkBox30};
+
     private StyleModel style = new StyleModel();
     private Exercise1Model model = new Exercise1Model();
     public static int[] i = new int[]{};
@@ -46,66 +53,10 @@ public class Exercise1Activity extends AppCompatActivity {
         listTextView.add((TextView)findViewById(R.id.verb10));
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise1Activity.this,listTextView);
 
-        final CheckBox choice1 = (CheckBox)findViewById(R.id.checkBox);
-        final CheckBox choice2 = (CheckBox)findViewById(R.id.checkBox2);
-        final CheckBox choice3 = (CheckBox)findViewById(R.id.checkBox3);
-        CheckBox choice4 = (CheckBox)findViewById(R.id.checkBox4);
-        CheckBox choice5 = (CheckBox)findViewById(R.id.checkBox5);
-        CheckBox choice6 = (CheckBox)findViewById(R.id.checkBox6);
-        final CheckBox choice7 = (CheckBox)findViewById(R.id.checkBox7);
-        final CheckBox choice8 = (CheckBox)findViewById(R.id.checkBox8);
-        final CheckBox choice9 = (CheckBox)findViewById(R.id.checkBox9);
-        CheckBox choice10 = (CheckBox)findViewById(R.id.checkBox10);
-        CheckBox choice11 = (CheckBox)findViewById(R.id.checkBox11);
-        CheckBox choice12 = (CheckBox)findViewById(R.id.checkBox12);
-        final CheckBox choice13 = (CheckBox)findViewById(R.id.checkBox13);
-        final CheckBox choice14 = (CheckBox)findViewById(R.id.checkBox14);
-        final CheckBox choice15 = (CheckBox)findViewById(R.id.checkBox15);
-        CheckBox choice16 = (CheckBox)findViewById(R.id.checkBox16);
-        CheckBox choice17 = (CheckBox)findViewById(R.id.checkBox17);
-        CheckBox choice18 = (CheckBox)findViewById(R.id.checkBox18);
-        CheckBox choice19 = (CheckBox)findViewById(R.id.checkBox19);
-        CheckBox choice20 = (CheckBox)findViewById(R.id.checkBox20);
-        CheckBox choice21 = (CheckBox)findViewById(R.id.checkBox21);
-        CheckBox choice22 = (CheckBox)findViewById(R.id.checkBox22);
-        final CheckBox choice23 = (CheckBox)findViewById(R.id.checkBox23);
-        final CheckBox choice24 = (CheckBox)findViewById(R.id.checkBox24);
-        final CheckBox choice25 = (CheckBox)findViewById(R.id.checkBox25);
-        CheckBox choice26 = (CheckBox)findViewById(R.id.checkBox26);
-        CheckBox choice27 = (CheckBox)findViewById(R.id.checkBox27);
-        CheckBox choice28 = (CheckBox)findViewById(R.id.checkBox28);
-        CheckBox choice29 = (CheckBox)findViewById(R.id.checkBox29);
-        CheckBox choice30 = (CheckBox)findViewById(R.id.checkBox30);
-        listCheckBox.add(choice1);
-        listCheckBox.add(choice2);
-        listCheckBox.add(choice3);
-        listCheckBox.add(choice4);
-        listCheckBox.add(choice5);
-        listCheckBox.add(choice6);
-        listCheckBox.add(choice7);
-        listCheckBox.add(choice8);
-        listCheckBox.add(choice9);
-        listCheckBox.add(choice10);
-        listCheckBox.add(choice11);
-        listCheckBox.add(choice12);
-        listCheckBox.add(choice13);
-        listCheckBox.add(choice14);
-        listCheckBox.add(choice15);
-        listCheckBox.add(choice16);
-        listCheckBox.add(choice17);
-        listCheckBox.add(choice18);
-        listCheckBox.add(choice19);
-        listCheckBox.add(choice20);
-        listCheckBox.add(choice21);
-        listCheckBox.add(choice22);
-        listCheckBox.add(choice23);
-        listCheckBox.add(choice24);
-        listCheckBox.add(choice25);
-        listCheckBox.add(choice26);
-        listCheckBox.add(choice27);
-        listCheckBox.add(choice28);
-        listCheckBox.add(choice29);
-        listCheckBox.add(choice30);
+
+        for (int i=0;i<check.length;i++){
+            listCheckBox.add((CheckBox) findViewById(check[i]));
+        }
         style.changeCheckBoxFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise1Activity.this,listCheckBox);
 
         model.changeLevel(Exercise1ChoiceActivity.level,model.list1,model.list2,model.list3,listTextView);

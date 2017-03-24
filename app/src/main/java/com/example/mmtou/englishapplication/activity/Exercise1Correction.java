@@ -15,16 +15,17 @@ import com.example.mmtou.englishapplication.model.StyleModel;
 import java.util.ArrayList;
 
 public class Exercise1Correction extends AppCompatActivity {
+    private int [] cor = new int[]{R.id.correction1,(R.id.correction2),R.id.correction3,R.id.correction4,R.id.correction5,
+            R.id.correction6,R.id.correction7,(R.id.correction8) , R.id.correction9,R.id.correction10};
+    private int [] ans = new int[]{(R.id.answer1),R.id.answer2,R.id.answer3,(R.id.answer4),(R.id.answer5),
+            (R.id.answer6),R.id.answer7,R.id.answer8,R.id.answer9,R.id.answer10};
     private ArrayList<TextView> listTextView = new ArrayList<TextView>();
     private ArrayList<TextView> listTitle= new ArrayList<TextView>();
     private ArrayList<TextView> listAnswer = new ArrayList<TextView>();
     private ArrayList<TextView> listCorrection= new ArrayList<TextView>();
     private StyleModel style = new StyleModel();
-    TextView answer;
-    TextView correction;
     private Exercise1Model model = new Exercise1Model();
     public Context context;
-    Exercise1Activity c = new Exercise1Activity();
     String s;
 
     @Override
@@ -49,26 +50,12 @@ public class Exercise1Correction extends AppCompatActivity {
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise1Correction.this,listTextView);
         //model.setLevel(listTextView,model.list1);
 
-        listAnswer.add((TextView)findViewById(R.id.answer1));
-        listCorrection.add((TextView)findViewById(R.id.correction1));
-        listAnswer.add((TextView)findViewById(R.id.answer2));
-        listCorrection.add((TextView)findViewById(R.id.correction2));
-        listAnswer.add((TextView)findViewById(R.id.answer3));
-        listCorrection.add((TextView)findViewById(R.id.correction3));
-        listAnswer.add((TextView)findViewById(R.id.answer4));
-        listCorrection.add((TextView)findViewById(R.id.correction4));
-        listAnswer.add((TextView)findViewById(R.id.answer5));
-        listCorrection.add((TextView)findViewById(R.id.correction5));
-        listAnswer.add((TextView)findViewById(R.id.answer6));
-        listCorrection.add((TextView)findViewById(R.id.correction6));
-        listAnswer.add((TextView)findViewById(R.id.answer7));
-        listCorrection.add((TextView)findViewById(R.id.correction7));
-        listAnswer.add((TextView)findViewById(R.id.answer8));
-        listCorrection.add((TextView)findViewById(R.id.correction8));
-        listAnswer.add((TextView)findViewById(R.id.answer9));
-        listCorrection.add((TextView)findViewById(R.id.correction9));
-        listAnswer.add((TextView)findViewById(R.id.answer10));
-        listCorrection.add((TextView)findViewById(R.id.correction10));
+        for (int i=0;i<cor.length;i++){
+            listCorrection.add((TextView) findViewById(cor[i]));
+        }
+        for (int j=0;j<ans.length;j++){
+            listAnswer.add((TextView) findViewById(ans[j]));
+        }
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise1Correction.this,listAnswer);
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise1Correction.this,listCorrection);
 

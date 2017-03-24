@@ -252,6 +252,40 @@
                 android:layout_below="@+id/checkBox8"
                 android:layout_centerHorizontal="true" />
 
+            <Button
+                android:text="Check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:background="@color/font2"
+                android:textSize="20sp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/checkBox10"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:text="REset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:id="@+id/button4"
+                android:textSize="20sp"
+                android:textColor="@color/poudré"
+                android:background="@color/font2"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_alignBaseline="@+id/button2"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_toLeftOf="@+id/button2"
+                android:layout_toStartOf="@+id/button2" />
+
         </RelativeLayout>
 
     </ScrollView>
