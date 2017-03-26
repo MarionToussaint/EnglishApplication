@@ -100,7 +100,7 @@ public class Exercise5Model {
             }
             else {
                 txt.get(j).setText(answer[j]);
-                txt1.get(j).setText("Correction : " +correction[j] + " - " + conjugaison);
+                txt1.get(j).setText("Correction : " +correction[j] + " - " + listConjugaison[j]);
             }
             j++;
         }

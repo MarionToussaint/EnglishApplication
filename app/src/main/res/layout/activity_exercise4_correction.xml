@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_exercise4_correction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/canard"
+    tools:context="com.example.mmtou.englishapplication.Exercise4CorrectionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1450px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Your Score is 20%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:id="@+id/score" />
+
+            <TextView
+                android:text="Have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:layout_marginTop="52dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Put"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb2"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/correction1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer2"
+                android:layout_alignBaseline="@+id/verb2"
+                android:layout_alignBottom="@+id/verb2"
+                android:layout_alignLeft="@+id/correction1"
+                android:layout_alignStart="@+id/correction1"
+                android:textSize="18sp"
+                android:textColor="@color/font2" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction2"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:layout_below="@+id/answer2"
+                android:layout_alignLeft="@+id/answer2"
+                android:layout_alignStart="@+id/answer2" />
+
+            <TextView
+                android:text="Met"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb3"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="center"
+                android:layout_marginTop="12dp"
+                android:textAllCaps="true"
+                android:layout_below="@+id/correction2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer3"
+                android:layout_alignLeft="@+id/correction2"
+                android:layout_alignStart="@+id/correction2"
+                android:layout_alignBottom="@+id/verb3"
+                android:textSize="18sp"
+                android:textColor="@color/font2" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction3"
+                android:layout_below="@+id/answer3"
+                android:layout_alignLeft="@+id/answer2"
+                android:layout_alignStart="@+id/answer2"
+                android:textColor="@color/poudré"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb4"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/correction3"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer4"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignBaseline="@+id/verb4"
+                android:layout_alignBottom="@+id/verb4"
+                android:layout_alignLeft="@+id/correction3"
+                android:layout_alignStart="@+id/correction3" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction4"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer4"
+                android:layout_alignLeft="@+id/answer4"
+                android:layout_alignStart="@+id/answer4" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb5"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/correction4"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer5"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignTop="@+id/verb5"
+                android:layout_alignLeft="@+id/correction4"
+                android:layout_alignStart="@+id/correction4" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction5"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer5"
+                android:layout_alignLeft="@+id/answer5"
+                android:layout_alignStart="@+id/answer5" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb6"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/correction5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer6"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignBottom="@+id/verb6"
+                android:layout_alignLeft="@+id/correction5"
+                android:layout_alignStart="@+id/correction5" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction6"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer6"
+                android:layout_alignLeft="@+id/answer6"
+                android:layout_alignStart="@+id/answer6" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb7"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/correction6"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer7"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignTop="@+id/verb7"
+                android:layout_alignLeft="@+id/correction4"
+                android:layout_alignStart="@+id/correction4" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction7"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer7"
+                android:layout_alignLeft="@+id/answer5"
+                android:layout_alignStart="@+id/answer5" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb8"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/correction7"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer8"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignTop="@+id/verb8"
+                android:layout_alignLeft="@+id/correction4"
+                android:layout_alignStart="@+id/correction4" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction8"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer8"
+                android:layout_alignLeft="@+id/answer5"
+                android:layout_alignStart="@+id/answer5" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb9"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/correction8"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer9"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignTop="@+id/verb9"
+                android:layout_alignLeft="@+id/correction4"
+                android:layout_alignStart="@+id/correction4" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction9"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer9"
+                android:layout_alignLeft="@+id/answer5"
+                android:layout_alignStart="@+id/answer5" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb10"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/correction9"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer10"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignTop="@+id/verb10"
+                android:layout_alignLeft="@+id/correction4"
+                android:layout_alignStart="@+id/correction4" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction10"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer10"
+                android:layout_alignLeft="@+id/answer5"
+                android:layout_alignStart="@+id/answer5" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb11"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/correction10"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer11"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignTop="@+id/verb11"
+                android:layout_alignLeft="@+id/correction4"
+                android:layout_alignStart="@+id/correction4" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction11"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer11"
+                android:layout_alignLeft="@+id/answer5"
+                android:layout_alignStart="@+id/answer5" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb12"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/correction11"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer12"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignTop="@+id/verb12"
+                android:layout_alignLeft="@+id/correction4"
+                android:layout_alignStart="@+id/correction4" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction12"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer12"
+                android:layout_alignLeft="@+id/answer5"
+                android:layout_alignStart="@+id/answer5" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb13"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/correction12"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer13"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignTop="@+id/verb13"
+                android:layout_alignLeft="@+id/correction4"
+                android:layout_alignStart="@+id/correction4" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction13"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer13"
+                android:layout_alignLeft="@+id/answer5"
+                android:layout_alignStart="@+id/answer5" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb14"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/correction13"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer14"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignTop="@+id/verb14"
+                android:layout_alignLeft="@+id/correction4"
+                android:layout_alignStart="@+id/correction4" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction14"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer14"
+                android:layout_alignLeft="@+id/answer5"
+                android:layout_alignStart="@+id/answer5" />
+
+            <TextView
+                android:text="ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verb15"
+                android:textColor="@color/poudré"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/correction14"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer15"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignTop="@+id/verb15"
+                android:layout_alignLeft="@+id/correction4"
+                android:layout_alignStart="@+id/correction4" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction15"
+                android:textColor="@color/poudré"
+                android:textSize="18sp"
+                android:layout_below="@+id/answer15"
+                android:layout_alignLeft="@+id/answer5"
+                android:layout_alignStart="@+id/answer5" />
+
+            <Button
+                android:text="Menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:textAlignment="center"
+                android:textColor="@color/poudré"
+                android:textSize="20sp"
+                android:background="@color/font2"
+                android:layout_marginRight="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_below="@+id/correction15"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correction1"
+                android:textSize="18sp"
+                android:textColor="@color/poudré"
+                android:textAlignment="textStart"
+                android:layout_below="@+id/answer1"
+                android:layout_alignLeft="@+id/answer1"
+                android:layout_alignStart="@+id/answer1" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer1"
+                android:textColor="@color/font2"
+                android:textSize="18sp"
+                android:layout_alignBaseline="@+id/verb"
+                android:layout_alignBottom="@+id/verb"
+                android:layout_alignRight="@+id/score"
+                android:layout_alignEnd="@+id/score" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:background="@color/font2"
+        android:id="@+id/layout1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Where Is The Wrong Verb ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textColor="@color/poudré"
+            android:textSize="30sp"
+            android:layout_marginTop="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Correction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rule"
+            android:textColor="@color/poudré"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

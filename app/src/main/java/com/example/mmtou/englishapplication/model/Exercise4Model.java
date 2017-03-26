@@ -27,155 +27,78 @@ import org.w3c.dom.Text;
 
 import java.security.PublicKey;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 
 /**
  * Created by mmtou on 08/03/2017.
  */
 public class Exercise4Model {
-    public String[] listLevel1 = new String[]{"read", "feel", "play", "see",
-            "listen", "do", "go", "make", "know", "help", "say", "think",
-            "like", "write", "forget", "eat", "take", "bring", "cut", "clean",
-            "watch", "be", "have", "meet", "put", "buy", "cook", "teach",
-            "catch", "find", "answer", "lose", "want", "tell", "win", "sit",
-            "sell", "build", "drink", "open"};
-    public int[] answerList = new int[]{1,2,3,0,1,2,2,3,0,0};
-    public ArrayList<TextView> pop = new ArrayList<>();
-    public Exercise4Activity ex = new Exercise4Activity();
+    public static String[][] listLevel1 = new String[][] {
+            {"go","have","say","do"}, {"come","stand","make","buy"}, {"sit","swim","speak","see"},{"write","understand","sing","run"},
+            {"go","have","say","do"}, {"come","stand","make","buy"}, {"sit","swim","speak","see"},{"write","understand","sing","run"},
+            {"go","have","say","do"}, {"come","stand","make","buy"}};
+    public String[] answerList = new String[]{"have","stand","sit","write","go","come","swim","understand","say","buy"};
+    //public Exercise4Activity ex = new Exercise4Activity();
 
     public Exercise4Model() {
     }
 
-    public void setLevel(String[] s, ArrayList<TextView> l) {
-        int j = 0;
-        for (int i = 0; i < l.size() - 2; i++) {
-            l.get(i).setText(s[j]);
-            j++;
+    public void setLevel(ArrayList<TextView> l, String[][] s){
+        int i = 0;
+        for (TextView t : l){
+            t.setText(s[i][0]+"\t\t"+s[i][1]+"\t\t"+s[i][2]+"\t\t"+s[i][3]);
+            i++;
         }
     }
 
-    public void Clickable(final CheckBox c1, final CheckBox c2, final CheckBox c3, final CheckBox c4) {
-        c1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView,
-                                         boolean isChecked) {
-                if (isChecked) {
-                    c2.setClickable(false);
-                    c3.setClickable(false);
-                    c4.setClickable(false);
-                }
-            }
-        });
-        c2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView,
-                                         boolean isChecked) {
-                if (isChecked) {
-                    c1.setClickable(false);
-                    c3.setClickable(false);
-                    c4.setClickable(false);
-                }
-            }
-        });
-        c3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView,
-                                         boolean isChecked) {
-                if (isChecked) {
-                    c1.setClickable(false);
-                    c2.setClickable(false);
-                    c4.setClickable(false);
-                }
-            }
-        });
-        c4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView,
-                                         boolean isChecked) {
-                if (isChecked) {
-                    c1.setClickable(false);
-                    c2.setClickable(false);
-                    c3.setClickable(false);
-                }
-            }
-        });
+    public String editTextEmpty(EditText box1){
+        String x;
+        if (!(box1.getText().toString().trim().length() == 0)){
+            x = box1.getText().toString();
+        }
+        else {
+            x = ("  ");
+        }
+        return x;
     }
 
-    public int answerChecked(CheckBox box1, CheckBox box2, CheckBox box3, CheckBox box4) {
-        int answer = 0;
-        if ((!box1.isChecked()) && (!box2.isChecked()) && (!box3.isChecked()) && (!box4.isChecked()))
-            answer = 0;
-        else if (box1.isChecked() && (!box2.isChecked()) && (!box3.isChecked()) && (!box4.isChecked()))
-            answer = 1;
-        else if (box2.isChecked() && (!box1.isChecked()) && (!box3.isChecked()) && (!box4.isChecked()))
-            answer = 2;
-        else if (box3.isChecked() && (!box2.isChecked()) && (!box1.isChecked()) && (!box4.isChecked()))
-            answer = 3;
-        else if ((!box1.isChecked()) && (!box2.isChecked()) && (!box3.isChecked()) && (box4.isChecked()))
-            answer = 4;
-
+    public String[] answerList(ArrayList<EditText> t){
+        String[] answer = new String[30];
+        int j = 0;
+        for (EditText e : t){
+            answer[j] = editTextEmpty(e);
+            j++;
+        }
         return answer;
     }
 
-    /*public void check(Button b, final ArrayList<CheckBox> l,int j) {
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int answer = answerChecked(l.get(0), l.get(1), l.get(2), l.get(3));
-                System.out.println("Answer is : " + answer);
-                ex.showPopup(answerList,listLevel1,answer,j);
-                j++;
+    public void verify(ArrayList<TextView> ans, ArrayList<TextView> cor,String[] correct,String[] s){
+        int j = 0;
+        int i = 0;
+        for (TextView t : ans){
+            if ((correct[i].equals(s[j]))){
+                ans.get(i).setText(correct[i]);
+                cor.get(i).setText("");
             }
-        });
-    }*/
-
-    public ArrayList<TextView> addPop(){
-        pop.add(((TextView) ex.pw.getContentView().findViewById(R.id.verb)));
-        pop.add(((TextView) ex.pw.getContentView().findViewById(R.id.verb1)));
-        pop.add(((TextView) ex.pw.getContentView().findViewById(R.id.verb2)));
-        pop.add(((TextView) ex.pw.getContentView().findViewById(R.id.verb3)));
-        pop.add(((TextView) ex.pw.getContentView().findViewById(R.id.verb4)));
-        pop.add(((TextView) ex.pw.getContentView().findViewById(R.id.verb5)));
-        pop.add(((TextView) ex.pw.getContentView().findViewById(R.id.verb6)));
-        pop.add(((TextView) ex.pw.getContentView().findViewById(R.id.verb7)));
-        pop.add(((TextView) ex.pw.getContentView().findViewById(R.id.textView3)));
-        pop.add(((TextView) ex.pw.getContentView().findViewById(R.id.textView2)));
-        return pop;
-    }
-
-    public void color(ArrayList<TextView> l, int answer, int[] answerList, int i){
-        l.get(answer-1).setTextColor(0xFFE5FFFA);
-        l.get(answerList[i]-1).setTextColor(0xFFE5FFFA);
-    }
-
-    public void clear(ArrayList<TextView> t, int index, String[] verb){
-        for (int i=0;i<4;i++){
-            t.get(i).setText(verb[index]);
-            index++;
+            else {
+                ans.get(i).setText(s[i]);
+                cor.get(i).setText("Correction : " + correct[i]);
+            }
+            j=j+2;
+            i++;
         }
     }
 
-    public void setChangePop(String[] verb, int[] answer, int ans,int index){
-        ArrayList<TextView> l =addPop();
-        color(l,ans,answer,index);
-        int indexVerb = 4*index;
-
-        if (!(answer[index]==ans)) {
-            for (int k = 0; k < 4; k++) {
-                l.get(k).setText(verb[indexVerb]);
-                l.get(k + 4).setText(verb[indexVerb]);
-                indexVerb++;
-            }
-        }
-        else {
-            for (int k = 0; k < 4; k++) {
-                l.get(k).setText(verb[indexVerb]);
-                l.get(k + 4).setText("");
-            }
-            l.get(8).setText("Good Answer !");
-            l.get(9).setText("");
+    public void clearEditText(ArrayList<EditText> c){
+        for(EditText cb : c) {
+            cb.getText().clear();
         }
     }
 
+
+    public void Checked (String answer, String correction){
+
+    }
 
 }

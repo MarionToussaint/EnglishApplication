@@ -47,9 +47,9 @@ public class Exercise5Activity extends AppCompatActivity {
             listCheckBox.add((CheckBox) findViewById(check[i]));
         }
 
-        style.changeFont("fonts/Aprikas_light_Demo.ttf",Exercise5Activity.this,listTitle);
+        style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise5Activity.this,listTitle);
         style.changeCheckBoxFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise5Activity.this,listCheckBox);
-        style.changeFont("fonts/Aprikas_light_Demo.ttf",Exercise5Activity.this,listTextView);
+        style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise5Activity.this,listTextView);
 
         System.out.println("CHECKBOX /"+listCheckBox.get(0).getText());
 
