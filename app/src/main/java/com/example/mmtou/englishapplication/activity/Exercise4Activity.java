@@ -1,35 +1,18 @@
-package com.example.mmtou.englishapplication;
+package com.example.mmtou.englishapplication.activity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.PopupWindow;
-import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.activity.Exercice2ChoiceActivity;
-import com.example.mmtou.englishapplication.activity.Exercise2Activity;
-import com.example.mmtou.englishapplication.activity.Exercise2CorrectionActivity;
-import com.example.mmtou.englishapplication.activity.Exercise3Activity;
+import com.example.mmtou.englishapplication.R;
 import com.example.mmtou.englishapplication.model.Exercise4Model;
 import com.example.mmtou.englishapplication.model.StyleModel;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.List;
 
 public class Exercise4Activity extends AppCompatActivity {
     public int[] textview = new int [] {R.id.textView,R.id.textView2,R.id.textView3,R.id.textView4,R.id.textView5,R.id.textView6,R.id.textView7,R.id.textView8,R.id.textView9,R.id.textView10};
@@ -40,7 +23,7 @@ public class Exercise4Activity extends AppCompatActivity {
     private StyleModel style = new StyleModel();
     private Exercise4Model model = new Exercise4Model();
     private ArrayList<EditText> listEdit= new ArrayList<EditText>();
-    String[] i;
+    public static String[] i;
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
@@ -51,7 +34,7 @@ public class Exercise4Activity extends AppCompatActivity {
         }
 
         for (int i=0;i<textview.length;i++){
-            listTextView.add((CheckBox) findViewById(textview[i]));
+            listTextView.add((TextView) findViewById(textview[i]));
         }
 
         listTitle.add(((TextView) findViewById(R.id.title)));
@@ -60,7 +43,7 @@ public class Exercise4Activity extends AppCompatActivity {
         style.changeFontEdittext("fonts/Aprikas_light_Demo.ttf", Exercise4Activity.this, listEdit);
         style.changeFont("fonts/Aprikas_light_Demo.ttf", Exercise4Activity.this, listTextView);
 
-        model.setLevel(listTextView,model.listLevel1);
+        model.changeLevel(Exercise4ChoiceActivity.level,model.listLevel1,model.listLevel2,model.listLevel3,listTextView);
 
         Button check = (Button)findViewById(R.id.button2);
         style.changeButtonFont("fonts/Aprikas_light_Demo.ttf",Exercise4Activity.this,check);

@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.Exercise3Correction;
 import com.example.mmtou.englishapplication.R;
 import com.example.mmtou.englishapplication.model.Exercise3Model;
 import com.example.mmtou.englishapplication.model.StyleModel;

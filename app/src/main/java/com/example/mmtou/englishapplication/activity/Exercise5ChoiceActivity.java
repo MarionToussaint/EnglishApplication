@@ -12,7 +12,7 @@ import com.example.mmtou.englishapplication.model.StyleModel;
 
 import java.util.ArrayList;
 
-public class Exercise1ChoiceActivity extends AppCompatActivity {
+public class Exercise5ChoiceActivity extends AppCompatActivity {
     int[] text = new int[]{R.id.title1,R.id.title3,R.id.exercise0,R.id.exercise1,R.id.exercise2};
     RelativeLayout layout1;
     RelativeLayout layout2;
@@ -24,7 +24,7 @@ public class Exercise1ChoiceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exercise1_choice);
+        setContentView(R.layout.activity_exercise5_choice);
 
         layout1 = (RelativeLayout)findViewById(R.id.relativeLayout1);
         layout2 = (RelativeLayout)findViewById(R.id.relativeLayout2);
@@ -33,23 +33,23 @@ public class Exercise1ChoiceActivity extends AppCompatActivity {
         for (int i=0; i<text.length;i++){
             listTextView.add((TextView) findViewById(text[i]));
         }
-        style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise1ChoiceActivity.this,listTextView);
+        style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise5ChoiceActivity.this,listTextView);
 
         layout1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(Exercise1ChoiceActivity.this,Exercise1Activity.class));
+                startActivity(new Intent(Exercise5ChoiceActivity.this,Exercise5Activity.class));
                 level=1;
             }
         });
         layout2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(Exercise1ChoiceActivity.this,Exercise1Activity.class));
+                startActivity(new Intent(Exercise5ChoiceActivity.this,Exercise5Activity.class));
                 level=2;
             }
         });
         layout3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(Exercise1ChoiceActivity.this,Exercise1Activity.class));
+                startActivity(new Intent(Exercise5ChoiceActivity.this,Exercise5Activity.class));
                 level=3;
             }
         });

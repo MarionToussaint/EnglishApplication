@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.ExerciseChoiceActivity;
 import com.example.mmtou.englishapplication.R;
 import com.example.mmtou.englishapplication.model.StyleModel;
 

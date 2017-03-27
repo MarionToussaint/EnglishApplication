@@ -1,47 +1,62 @@
 package com.example.mmtou.englishapplication.model;
 
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.PopupWindow;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.mmtou.englishapplication.Exercise4Activity;
-import com.example.mmtou.englishapplication.ExerciseChoiceActivity;
-import com.example.mmtou.englishapplication.R;
-import com.example.mmtou.englishapplication.activity.Exercise1ChoiceActivity;
-
-import org.w3c.dom.Text;
-
-import java.security.PublicKey;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.StringTokenizer;
 
 /**
  * Created by mmtou on 08/03/2017.
  */
 public class Exercise4Model {
     public static String[][] listLevel1 = new String[][] {
-            {"go","have","say","do"}, {"come","stand","make","buy"}, {"sit","swim","speak","see"},{"write","understand","sing","run"},
-            {"go","have","say","do"}, {"come","stand","make","buy"}, {"sit","swim","speak","see"},{"write","understand","sing","run"},
-            {"go","have","say","do"}, {"come","stand","make","buy"}};
-    public String[] answerList = new String[]{"have","stand","sit","write","go","come","swim","understand","say","buy"};
-    //public Exercise4Activity ex = new Exercise4Activity();
+            {"crow","cry","do","clothe"}, {"have","stand","play","buy"}, {"sit","swim","want","prove"},{"write","understand","live","run"},
+            {"rid","run","shout","come"}, {"shift","see","saw","sing"}, {"shave","spoil","sweat","seel"},{"catch","cancel","cut","wear"},
+            {"ring","thrive","creep","crinkle"}, {"deal","break","fight","follow"}};
+    public static String[][] listLevel2 = new String[][] {
+            {"tell","feel","freeze","venge"}, {"clap","think","win","flirt"}, {"sell","risk","drink","eat"},{"dwell","fit","wrap","meet"},
+            {"quit","rive","set","get"}, {"rid","rip","ride","ring"}, {"shake","show","scream","bet"},{"seem","shoot","bear","abide"},
+            {"breed","cleave","creep","flee"}, {"feed","kneel","kick","knit"}};
+    public static String[][] listLevel3 = new String[][] {
+            {"repeal","strike","swing","teach"}, {"imagine","thrust","tread","undergo"}, {"wind","wring","spall","wake"},{"wet","wed","tear","carve"},
+            {"pay","spean","overtake","put"}, {"mislead","lose","beg","lie"}, {"castle","leave","learn","grow"},{"grind","hang","hit","case"},
+            {"leap","loose","inlay","input"}, {"forgive","forget","forbid","forward"}};
+
+    public String[] answerList1 = new String[]{"cry","play","want","live","shout","shift","seel","cancel","crinkle","follow"};
+    public String[] answerList2 = new String[]{"venge","flirt","risk","wrap","rive","rip","bet","seem","flee","kick"};
+    public String[] answerList3 = new String[]{"repeal","imagine","spall","carve","spean","beg","castle","case","loose","forward"};
 
     public Exercise4Model() {
+    }
+
+    public int score(String[] answer,String[] correct){
+        int score = 0;
+        for (int i=0;i<10;i++){
+            if (answer[i].equals(correct[i])) {
+                score = score + 1;
+            }
+            else {
+                score = score;
+            }
+        }
+        score = score*100;
+        return (score);
+    }
+
+    public int scoreLevel(int level, String[] correct, String[] a1, String[]  a2, String[]  a3){
+        int r = 0;
+        switch (level){
+            case (1):
+                r = score(correct,a1);
+                break;
+            case (2):
+                r = score(correct,a2);
+                break;
+            case(3):
+                r = score(correct,a3);
+                break;
+        }
+        return r;
     }
 
     public void setLevel(ArrayList<TextView> l, String[][] s){
@@ -52,19 +67,55 @@ public class Exercise4Model {
         }
     }
 
+    public void changeLevel(int level, String[][] s1, String[][] s2, String[][] s3,ArrayList<TextView> l){
+        switch (level){
+            case (1):
+                setLevel(l,s1);
+                break;
+            case (2):
+                setLevel(l,s2);
+                break;
+            case(3):
+                setLevel(l,s3);
+                break;
+        }
+    }
+
+    public void setLevel2(ArrayList<TextView> l, String[][] s){
+        int i = 0;
+        for (TextView t : l){
+            t.setText(s[i][0]+"-"+s[i][1]+"-"+s[i][2]+"-"+s[i][3]);
+            i++;
+        }
+    }
+
+    public void changeLevel2(int level, String[][] s1, String[][] s2, String[][] s3,ArrayList<TextView> l){
+        switch (level){
+            case (1):
+                setLevel2(l,s1);
+                break;
+            case (2):
+                setLevel2(l,s2);
+                break;
+            case(3):
+                setLevel2(l,s3);
+                break;
+        }
+    }
+
     public String editTextEmpty(EditText box1){
         String x;
         if (!(box1.getText().toString().trim().length() == 0)){
             x = box1.getText().toString();
         }
         else {
-            x = ("  ");
+            x = ("No Answer");
         }
         return x;
     }
 
     public String[] answerList(ArrayList<EditText> t){
-        String[] answer = new String[30];
+        String[] answer = new String[10];
         int j = 0;
         for (EditText e : t){
             answer[j] = editTextEmpty(e);
@@ -77,7 +128,7 @@ public class Exercise4Model {
         int j = 0;
         int i = 0;
         for (TextView t : ans){
-            if ((correct[i].equals(s[j]))){
+            if ((s[i].equals(correct[i]))){
                 ans.get(i).setText(correct[i]);
                 cor.get(i).setText("");
             }
@@ -90,6 +141,21 @@ public class Exercise4Model {
         }
     }
 
+    public void verifyLevel(ArrayList<TextView> txt, ArrayList<TextView> txt1,int level, String[] correct, String[] a1, String[] a2, String[] a3){
+        int r = 0;
+        switch (level){
+            case (1):
+                verify(txt,txt1,correct,a1);
+                break;
+            case (2):
+                verify(txt,txt1,correct,a2);
+                break;
+            case(3):
+                verify(txt,txt1,correct,a3);
+                break;
+        }
+    }
+
     public void clearEditText(ArrayList<EditText> c){
         for(EditText cb : c) {
             cb.getText().clear();
@@ -97,8 +163,5 @@ public class Exercise4Model {
     }
 
 
-    public void Checked (String answer, String correction){
-
-    }
 
 }

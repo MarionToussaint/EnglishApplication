@@ -7,10 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.activity.Exercise1Activity;
 import com.example.mmtou.englishapplication.activity.Exercise1ChoiceActivity;
-import com.example.mmtou.englishapplication.activity.Exercise1Correction;
-import com.example.mmtou.englishapplication.model.Exercise1Model;
+import com.example.mmtou.englishapplication.activity.Exercise5Activity;
+import com.example.mmtou.englishapplication.activity.Exercise5ChoiceActivity;
 import com.example.mmtou.englishapplication.model.Exercise5Model;
 import com.example.mmtou.englishapplication.model.StyleModel;
 
@@ -59,9 +58,9 @@ public class Exercise5CorrectionActivity extends AppCompatActivity {
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise5CorrectionActivity.this,listAnswer);
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise5CorrectionActivity.this,listCorrection);
 
-        int score = model.score(Exercise5Activity.i,model.listAnswer);
+        int score = model.scoreLevel(Exercise5ChoiceActivity.level,Exercise5Activity.i,model.listAnswer1,model.listAnswer2,model.listAnswer3);
         ((TextView)findViewById(R.id.score)).setText("Your Score is " + score + "%");
-        model.verify(listAnswer,listCorrection,Exercise5Activity.i,model.listAnswer,model.listConjugaison);
+        model.verifyLevel(listAnswer,listCorrection,Exercise5ChoiceActivity.level,Exercise5Activity.i,model.listAnswer1,model.listAnswer2,model.listAnswer3,model.listConjugaison1,model.listConjugaison2,model.listConjugaison3);
 
         Button menu = (Button)findViewById(R.id.button3);
         style.changeButtonFont("fonts/Aprikas_light_Demo.ttf",Exercise5CorrectionActivity.this,menu);

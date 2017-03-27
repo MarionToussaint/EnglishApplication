@@ -1,4 +1,4 @@
-package com.example.mmtou.englishapplication;
+package com.example.mmtou.englishapplication.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,10 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.activity.Exercice2ChoiceActivity;
-import com.example.mmtou.englishapplication.activity.Exercise2Activity;
-import com.example.mmtou.englishapplication.activity.Exercise2CorrectionActivity;
-import com.example.mmtou.englishapplication.model.Exercise2Model;
+import com.example.mmtou.englishapplication.R;
 import com.example.mmtou.englishapplication.model.Exercise4Model;
 import com.example.mmtou.englishapplication.model.StyleModel;
 
@@ -44,11 +41,6 @@ public class Exercise4CorrectionActivity extends AppCompatActivity {
         listTextView.add((TextView)findViewById(R.id.verb8));
         listTextView.add((TextView)findViewById(R.id.verb9));
         listTextView.add((TextView)findViewById(R.id.verb10));
-        listTextView.add((TextView)findViewById(R.id.verb11));
-        listTextView.add((TextView)findViewById(R.id.verb12));
-        listTextView.add((TextView)findViewById(R.id.verb13));
-        listTextView.add((TextView)findViewById(R.id.verb14));
-        listTextView.add((TextView)findViewById(R.id.verb15));
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise4CorrectionActivity.this,listTextView);
         //model.setLevel(listTextView,model.list1);
 
@@ -72,24 +64,14 @@ public class Exercise4CorrectionActivity extends AppCompatActivity {
         listCorrection.add((TextView)findViewById(R.id.correction9));
         listAnswer.add((TextView)findViewById(R.id.answer10));
         listCorrection.add((TextView)findViewById(R.id.correction10));
-        listAnswer.add((TextView)findViewById(R.id.answer11));
-        listCorrection.add((TextView)findViewById(R.id.correction11));
-        listAnswer.add((TextView)findViewById(R.id.answer12));
-        listCorrection.add((TextView)findViewById(R.id.correction12));
-        listAnswer.add((TextView)findViewById(R.id.answer13));
-        listCorrection.add((TextView)findViewById(R.id.correction13));
-        listAnswer.add((TextView)findViewById(R.id.answer14));
-        listCorrection.add((TextView)findViewById(R.id.correction14));
-        listAnswer.add((TextView)findViewById(R.id.answer15));
-        listCorrection.add((TextView)findViewById(R.id.correction15));
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise4CorrectionActivity.this,listAnswer);
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise4CorrectionActivity.this,listCorrection);
 
-        model.setLevel(listTextView,model.listLevel1);
+        model.changeLevel2(Exercise4ChoiceActivity.level,model.listLevel1,model.listLevel2,model.listLevel3,listTextView);
 
-        model.verify(listAnswer,listCorrection,model.answerList,Exercise2Activity.i);
-        //int score = model.scoreLevel(Exercice2ChoiceActivity.level,Exercise2Activity.i, model.listLevel1,model.listLevel2,model.listLevel3,model.listLevel4,model.listLevel5,model.listLevel6);
-        //((TextView)findViewById(R.id.score)).setText("Your Score is " + score + "%");
+        model.verifyLevel(listAnswer,listCorrection, Exercise4ChoiceActivity.level, Exercise2Activity.i,model.answerList1,model.answerList2,model.answerList3);
+        int score = model.scoreLevel(Exercice2ChoiceActivity.level,Exercise2Activity.i, model.answerList1,model.answerList2,model.answerList3);
+        ((TextView)findViewById(R.id.score)).setText("Your Score is " + score + "%");
 
         Button menu = (Button)findViewById(R.id.button3);
         style.changeButtonFont("fonts/Aprikas_light_Demo.ttf",Exercise4CorrectionActivity.this,menu);
@@ -100,5 +82,5 @@ public class Exercise4CorrectionActivity extends AppCompatActivity {
             }
         });
     }
-    
+
 }

@@ -5,7 +5,7 @@ burn	burnt   burned	burnt   burned	brûler
 clap	clapt  clapped	clapt  clapped	taper
 cleave	clove  cleaved	cloven  cleaved	fendre
 clothe	clad    clothed	clad    clothed	vêtir
-crow	crew  crowed	crowed	bonder
+crow	crew    crowed	crowed	bonder
 dive	dove       dived	dived	plonger
 dream	dreamt  dreamed	dreamt  dreamed	rêver
 dwell	dwelt  dwelled	dwelt  dwelled	habiter
@@ -14,8 +14,8 @@ forecast	forecast  forecasted	forecast  forecasted	prévoir
 input	input  inputted	input  inputted	insérer
 kneel	knelt  kneeled	knelt  kneeled	s'agenouiller
 knit	knit      knitted	knit      knitted	tricoter
-lean	leant   leaned	leant   leaned	pencher
-leap	leapt   leaped	leapt   leaped	sauter
+lean	leant    leaned	leant    leaned	pencher
+leap	leapt   leaped	leapt    leaped	sauter
 learn	learnt  learned	learnt  learned	apprendre
 light	lit         lighted	lit         lighted	éclairer
 melt	melted	molten  melted	fondre
@@ -27,7 +27,7 @@ saw	saw      sawed	sawn      sawed	scier
 shave	shaved	shaven  shaved	raser
 smell	smelt  smelled	smelt  smelled	sentir
 speed	sped  speeded	sped  speeded	aller vite
-spell	spelt  spelled	spelt  spelled	épeler
+spell	spelt    spelled	spelt    spelled	épeler
 spill	spilt      spilled	spilt      spilled	renverser
 spoil	spoilt  spoiled	spoilt  spoiled	gâcher
 sweat	sweat  sweated	sweat  sweated	suer

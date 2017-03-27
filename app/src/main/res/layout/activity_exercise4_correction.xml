@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/canard"
-    tools:context="com.example.mmtou.englishapplication.Exercise4CorrectionActivity">
+    tools:context="com.example.mmtou.englishapplication.activity.Exercise4CorrectionActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -63,18 +63,6 @@
                 android:layout_below="@+id/correction1"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/answer2"
-                android:layout_alignBaseline="@+id/verb2"
-                android:layout_alignBottom="@+id/verb2"
-                android:layout_alignLeft="@+id/correction1"
-                android:layout_alignStart="@+id/correction1"
-                android:textSize="18sp"
-                android:textColor="@color/font2" />
 
             <TextView
                 android:text="TextView"
@@ -369,181 +357,6 @@
                 android:layout_alignLeft="@+id/answer5"
                 android:layout_alignStart="@+id/answer5" />
 
-            <TextView
-                android:text="ff"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/verb11"
-                android:textColor="@color/poudré"
-                android:textAllCaps="true"
-                android:textSize="18sp"
-                android:layout_below="@+id/correction10"
-                android:layout_marginTop="12dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/answer11"
-                android:textSize="18sp"
-                android:textColor="@color/font2"
-                android:layout_alignTop="@+id/verb11"
-                android:layout_alignLeft="@+id/correction4"
-                android:layout_alignStart="@+id/correction4" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/correction11"
-                android:textColor="@color/poudré"
-                android:textSize="18sp"
-                android:layout_below="@+id/answer11"
-                android:layout_alignLeft="@+id/answer5"
-                android:layout_alignStart="@+id/answer5" />
-
-            <TextView
-                android:text="ff"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/verb12"
-                android:textColor="@color/poudré"
-                android:textAllCaps="true"
-                android:textSize="18sp"
-                android:layout_below="@+id/correction11"
-                android:layout_marginTop="12dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/answer12"
-                android:textSize="18sp"
-                android:textColor="@color/font2"
-                android:layout_alignTop="@+id/verb12"
-                android:layout_alignLeft="@+id/correction4"
-                android:layout_alignStart="@+id/correction4" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/correction12"
-                android:textColor="@color/poudré"
-                android:textSize="18sp"
-                android:layout_below="@+id/answer12"
-                android:layout_alignLeft="@+id/answer5"
-                android:layout_alignStart="@+id/answer5" />
-
-            <TextView
-                android:text="ff"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/verb13"
-                android:textColor="@color/poudré"
-                android:textAllCaps="true"
-                android:textSize="18sp"
-                android:layout_below="@+id/correction12"
-                android:layout_marginTop="12dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/answer13"
-                android:textSize="18sp"
-                android:textColor="@color/font2"
-                android:layout_alignTop="@+id/verb13"
-                android:layout_alignLeft="@+id/correction4"
-                android:layout_alignStart="@+id/correction4" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/correction13"
-                android:textColor="@color/poudré"
-                android:textSize="18sp"
-                android:layout_below="@+id/answer13"
-                android:layout_alignLeft="@+id/answer5"
-                android:layout_alignStart="@+id/answer5" />
-
-            <TextView
-                android:text="ff"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/verb14"
-                android:textColor="@color/poudré"
-                android:textAllCaps="true"
-                android:textSize="18sp"
-                android:layout_below="@+id/correction13"
-                android:layout_marginTop="12dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/answer14"
-                android:textSize="18sp"
-                android:textColor="@color/font2"
-                android:layout_alignTop="@+id/verb14"
-                android:layout_alignLeft="@+id/correction4"
-                android:layout_alignStart="@+id/correction4" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/correction14"
-                android:textColor="@color/poudré"
-                android:textSize="18sp"
-                android:layout_below="@+id/answer14"
-                android:layout_alignLeft="@+id/answer5"
-                android:layout_alignStart="@+id/answer5" />
-
-            <TextView
-                android:text="ff"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/verb15"
-                android:textColor="@color/poudré"
-                android:textAllCaps="true"
-                android:textSize="18sp"
-                android:layout_below="@+id/correction14"
-                android:layout_marginTop="12dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/answer15"
-                android:textSize="18sp"
-                android:textColor="@color/font2"
-                android:layout_alignTop="@+id/verb15"
-                android:layout_alignLeft="@+id/correction4"
-                android:layout_alignStart="@+id/correction4" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/correction15"
-                android:textColor="@color/poudré"
-                android:textSize="18sp"
-                android:layout_below="@+id/answer15"
-                android:layout_alignLeft="@+id/answer5"
-                android:layout_alignStart="@+id/answer5" />
-
             <Button
                 android:text="Menu"
                 android:layout_width="wrap_content"
@@ -555,7 +368,7 @@
                 android:background="@color/font2"
                 android:layout_marginRight="26dp"
                 android:layout_marginEnd="26dp"
-                android:layout_below="@+id/correction15"
+                android:layout_below="@+id/correction10"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="20dp"/>
@@ -576,13 +389,27 @@
                 android:text="TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/answer2"
+                android:textSize="18sp"
+                android:textColor="@color/font2"
+                android:layout_alignBaseline="@+id/verb2"
+                android:layout_alignBottom="@+id/verb2"
+                android:layout_alignLeft="@+id/correction1"
+                android:layout_alignStart="@+id/correction1" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/answer1"
                 android:textColor="@color/font2"
                 android:textSize="18sp"
                 android:layout_alignBaseline="@+id/verb"
                 android:layout_alignBottom="@+id/verb"
-                android:layout_alignRight="@+id/score"
-                android:layout_alignEnd="@+id/score" />
+                android:layout_toRightOf="@+id/verb"
+                android:layout_toEndOf="@+id/verb"
+                android:layout_marginLeft="76dp"
+                android:layout_marginStart="76dp" />
 
 
         </RelativeLayout>
