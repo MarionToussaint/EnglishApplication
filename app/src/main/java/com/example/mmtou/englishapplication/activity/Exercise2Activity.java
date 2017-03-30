@@ -110,19 +110,19 @@ public class Exercise2Activity extends AppCompatActivity {
         });
 
 
-        /*parentHeaderInformation = new ArrayList<String>();
+        parentHeaderInformation = new ArrayList<String>();
         parentHeaderInformation.add("Show Example");
         HashMap<String, List<String>> allChildItems = returnGroupedChildItems();
         expandableListView = (ExpandableListView)findViewById(R.id.expandableListView);
         ExpandableListViewAdapter expandableListViewAdapter = new ExpandableListViewAdapter(getApplicationContext(), parentHeaderInformation, allChildItems);
         expandableListView.setAdapter(expandableListViewAdapter);
-        //expandableListView.setChildIndicator(null);*/
+        expandableListView.setChildIndicator(null);
     }
 
     private HashMap<String, List<String>> returnGroupedChildItems(){
         HashMap<String, List<String>> childContent = new HashMap<String, List<String>>();
         List<String> cars = new ArrayList<String>();
-        cars.add("Give");
+        cars.add("GIVE");
         childContent.put(parentHeaderInformation.get(0), cars);
         return childContent;
     }

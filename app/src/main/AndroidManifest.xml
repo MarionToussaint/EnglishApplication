@@ -34,7 +34,12 @@
         <activity android:name=".activity.ExerciseChoiceActivity" />
         <activity android:name=".activity.Exercise1Activity" />
         <activity android:name=".activity.Exercise1Correction" />
-        <activity android:name=".activity.Exercise1ChoiceActivity" />
+        <activity android:name=".activity.Exercise1ChoiceActivity"
+            android:parentActivityName=".activity.ExerciseChoiceActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".activity.ExerciseChoiceActivity" />
+        </activity>
         <activity android:name=".activity.Exercise2Activity" />
         <activity android:name=".activity.Exercise2CorrectionActivity" />
         <activity android:name=".activity.Exercice2ChoiceActivity" />
@@ -43,7 +48,7 @@
         <activity android:name=".activity.Exercise3ChoiceActivity" />
         <activity android:name=".activity.Exercise4Activity" />
         <activity android:name=".activity.Exercise5Activity" />
-        <activity android:name=".Exercise5CorrectionActivity" />
+        <activity android:name=".activity.Exercise5CorrectionActivity" />
         <activity android:name=".activity.Exercise4CorrectionActivity" />
         <activity android:name=".activity.Exercise4ChoiceActivity" />
         <activity android:name=".activity.Exercise5ChoiceActivity"></activity>

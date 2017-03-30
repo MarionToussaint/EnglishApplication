@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import com.example.mmtou.englishapplication.Exercise5CorrectionActivity;
 import com.example.mmtou.englishapplication.R;
 import com.example.mmtou.englishapplication.model.Exercise5Model;
 import com.example.mmtou.englishapplication.model.StyleModel;

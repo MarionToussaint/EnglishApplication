@@ -3,18 +3,26 @@ package com.example.mmtou.englishapplication.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ExpandableListView;
 import android.widget.TextView;
 
+import com.example.mmtou.englishapplication.ExpandableListViewAdapter;
+import com.example.mmtou.englishapplication.ExpandableListViewAdapter2;
 import com.example.mmtou.englishapplication.R;
 import com.example.mmtou.englishapplication.model.Exercise3Model;
 import com.example.mmtou.englishapplication.model.StyleModel;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Exercise3Activity extends AppCompatActivity {
+    private ExpandableListView expandableListView;
+    private List<String>parentHeaderInformation;
     private ArrayList<TextView> listTitle = new ArrayList<TextView>();
     private ArrayList<TextView> listTextView = new ArrayList<TextView>();
     private ArrayList<EditText> listEditText = new ArrayList<EditText>();
@@ -99,5 +107,34 @@ public class Exercise3Activity extends AppCompatActivity {
                 model.clearEditText(listEditText);
             }
         });
+        parentHeaderInformation = new ArrayList<String>();
+        parentHeaderInformation.add("Show Example");
+        HashMap<String, List<String>> allChildItems = returnGroupedChildItems();
+        expandableListView = (ExpandableListView)findViewById(R.id.expandableListView);
+        ExpandableListViewAdapter2 expandableListViewAdapter = new ExpandableListViewAdapter2(getApplicationContext(), parentHeaderInformation, allChildItems);
+        expandableListView.setAdapter(expandableListViewAdapter);
+        expandableListView.setChildIndicator(null);
+    }
+
+    private HashMap<String, List<String>> returnGroupedChildItems(){
+        HashMap<String, List<String>> childContent = new HashMap<String, List<String>>();
+        List<String> cars = new ArrayList<String>();
+        cars.add("GIVE");
+        childContent.put(parentHeaderInformation.get(0), cars);
+        return childContent;
+    }
+
+    @Override
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
