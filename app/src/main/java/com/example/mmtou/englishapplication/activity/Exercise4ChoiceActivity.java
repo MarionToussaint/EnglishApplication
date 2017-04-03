@@ -39,18 +39,21 @@ public class Exercise4ChoiceActivity extends AppCompatActivity {
             public void onClick(View v){
                 startActivity(new Intent(Exercise4ChoiceActivity.this,Exercise4Activity.class));
                 level=1;
+                finish();
             }
         });
         layout2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(Exercise4ChoiceActivity.this,Exercise4Activity.class));
                 level=2;
+                finish();
             }
         });
         layout3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(Exercise4ChoiceActivity.this,Exercise4Activity.class));
                 level=3;
+                finish();
             }
         });
 

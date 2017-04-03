@@ -31,6 +31,10 @@ public class Exercise2Activity extends AppCompatActivity {
     private Exercise2Model model = new Exercise2Model();
     public static String[] i ;
 
+    public void onBackPressed() {
+        Exercise2Activity.this.finish();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,6 +104,7 @@ public class Exercise2Activity extends AppCompatActivity {
             public void onClick(View v) {
                 i = model.answerList(listEditText);
                 startActivity(new Intent(Exercise2Activity.this,Exercise2CorrectionActivity.class));
+                finish();
             }
         });
         reset.setOnClickListener(new View.OnClickListener() {

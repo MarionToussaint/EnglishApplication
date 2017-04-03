@@ -59,6 +59,7 @@ public class Exercise5Activity extends AppCompatActivity {
             public void onClick(View v) {
                 i = model.answerCheckedGlobal(listCheckBox,model.listVerb1);
                 startActivity(new Intent(Exercise5Activity.this,Exercise5CorrectionActivity.class));
+                finish();
             }
         });
         reset.setOnClickListener(new View.OnClickListener() {

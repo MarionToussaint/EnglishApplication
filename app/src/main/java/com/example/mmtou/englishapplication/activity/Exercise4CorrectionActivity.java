@@ -79,6 +79,7 @@ public class Exercise4CorrectionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Exercise4CorrectionActivity.this,Exercice2ChoiceActivity.class));
+                finish();
             }
         });
     }

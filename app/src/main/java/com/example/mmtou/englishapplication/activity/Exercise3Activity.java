@@ -99,6 +99,7 @@ public class Exercise3Activity extends AppCompatActivity {
             public void onClick(View v) {
                 i = model.answerList(listEditText);
                 startActivity(new Intent(Exercise3Activity.this,Exercise3Correction.class));
+                finish();
             }
         });
         reset.setOnClickListener(new View.OnClickListener() {

@@ -49,18 +49,21 @@ public class Exercice2ChoiceActivity extends AppCompatActivity {
             public void onClick(View v){
                 startActivity(new Intent(Exercice2ChoiceActivity.this,Exercise2Activity.class));
                 level=1;
+                finish();
             }
         });
         layout2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(Exercice2ChoiceActivity.this,Exercise2Activity.class));
                 level=2;
+                finish();
             }
         });
         layout3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(Exercice2ChoiceActivity.this,Exercise2Activity.class));
                 level=3;
+                finish();
             }
         });
 
@@ -68,18 +71,21 @@ public class Exercice2ChoiceActivity extends AppCompatActivity {
             public void onClick(View v){
                 startActivity(new Intent(Exercice2ChoiceActivity.this,Exercise2Activity.class));
                 level=4;
+                finish();
             }
         });
         layout5.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(Exercice2ChoiceActivity.this,Exercise2Activity.class));
                 level=5;
+                finish();
             }
         });
         layout6.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(Exercice2ChoiceActivity.this,Exercise2Activity.class));
                 level=6;
+                finish();
             }
         });
     }

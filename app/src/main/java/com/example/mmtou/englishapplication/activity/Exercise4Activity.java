@@ -54,6 +54,7 @@ public class Exercise4Activity extends AppCompatActivity {
             public void onClick(View v) {
                 i = model.answerList(listEdit);
                 startActivity(new Intent(Exercise4Activity.this,Exercise4CorrectionActivity.class));
+                finish();
             }
         });
         reset.setOnClickListener(new View.OnClickListener() {

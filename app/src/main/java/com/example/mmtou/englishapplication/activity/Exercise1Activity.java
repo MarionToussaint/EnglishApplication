@@ -70,6 +70,7 @@ public class Exercise1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 i = model.changeAnswerLevel(Exercise1ChoiceActivity.level,model.list1,model.list2,model.list3,listCheckBox);
                 startActivity(new Intent(Exercise1Activity.this,Exercise1Correction.class));
+                finish();
             }
         });
         reset.setOnClickListener(new View.OnClickListener() {

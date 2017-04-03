@@ -66,6 +66,7 @@ public class Exercise5CorrectionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Exercise5CorrectionActivity.this,Exercise1ChoiceActivity.class));
+                finish();
             }
         });
     }
