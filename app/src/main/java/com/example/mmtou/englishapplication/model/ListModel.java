@@ -54,7 +54,7 @@ public class ListModel {
         return feedList;
     }
 
-    public String[][]  readFileDef(String file, Context context){
+    public String[][]  readFileDef(String file, Context context,String sep){
         String[][] map = new String[180][4];
         try {
             int i =0;
@@ -62,7 +62,7 @@ public class ListModel {
             BufferedReader br = new BufferedReader(new InputStreamReader((inputreader)));
             String line;
             while ((line = br.readLine())!=null) {
-                String pats[]=line.split("_");
+                String pats[]=line.split(sep);
                 map[i][0]=(pats[0]);
                 map[i][1]=(pats[1]);
                 map[i][2]=(pats[2]);
@@ -76,10 +76,12 @@ public class ListModel {
         return map;
     }
 
-    public void showPopup(Context ctxt,View view, ArrayList<HashMap<String, String>>  feedList,int pos, String file){
+    public void showPopup(Context ctxt,View view, String feedList,int pos, String file){
         try {
+            String[][] list = new String[][]{};
+            list = readFileDef(feedList,ctxt,"\t");
             String[][] definitionList = new String[][]{};
-            definitionList = readFileDef(file,ctxt);
+            definitionList = readFileDef(file,ctxt,"_");
             LayoutInflater inflater = (LayoutInflater)ctxt.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View popupView = inflater.inflate(R.layout.popup_list,(ViewGroup) view.findViewById(R.id.popup));
             pw = new PopupWindow(popupView, 1000,  650, true);
@@ -93,10 +95,10 @@ public class ListModel {
             listTextView.add((TextView) pw.getContentView().findViewById(R.id.example2));
             listTextView.add((TextView) pw.getContentView().findViewById(R.id.example3));
             style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",ctxt,listTextView);
-            ((TextView) pw.getContentView().findViewById(R.id.inf)).setText(feedList.get(pos).get("infinitive"));
-            ((TextView) pw.getContentView().findViewById(R.id.pret)).setText(feedList.get(pos).get("preterite"));
-            ((TextView) pw.getContentView().findViewById(R.id.part)).setText(feedList.get(pos).get("pastParticiple"));
-            ((TextView) pw.getContentView().findViewById(R.id.trans)).setText(feedList.get(pos).get("translate"));
+            ((TextView) pw.getContentView().findViewById(R.id.inf)).setText(list[pos][0]);
+            ((TextView) pw.getContentView().findViewById(R.id.pret)).setText(list[pos][1]);
+            ((TextView) pw.getContentView().findViewById(R.id.part)).setText(list[pos][2]);
+            ((TextView) pw.getContentView().findViewById(R.id.trans)).setText(list[pos][3]);
             ((TextView) pw.getContentView().findViewById(R.id.definition)).setText(definitionList[pos][0]);
             ((TextView) pw.getContentView().findViewById(R.id.example1)).setText(definitionList[pos][1]);
             ((TextView) pw.getContentView().findViewById(R.id.example2)).setText(definitionList[pos][2]);

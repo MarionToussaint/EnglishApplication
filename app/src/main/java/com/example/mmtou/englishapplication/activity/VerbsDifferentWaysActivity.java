@@ -15,6 +15,7 @@ import java.util.HashMap;
 
 public class VerbsDifferentWaysActivity extends AppCompatActivity {
     private ArrayList<HashMap<String, String>> feedList= new ArrayList<HashMap<String, String>>();
+    private ArrayList<HashMap<String, String>> feedList1= new ArrayList<HashMap<String, String>>();
     private ListModel model = new ListModel();
     private ListView list;
     private int pos;
@@ -34,7 +35,7 @@ public class VerbsDifferentWaysActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 pos = position;
-                model.showPopup(VerbsDifferentWaysActivity.this,view,feedList,position,"definitionDiff.txt");
+                model.showPopup(VerbsDifferentWaysActivity.this,view,"differentForms2.txt",position,"definitionDiff.txt");
 
             }
         });

@@ -36,7 +36,7 @@ public class CommonListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 pos = position;
-                model.showPopup(CommonListActivity.this,view,feedList,position,"definitionCommon.txt");
+                model.showPopup(CommonListActivity.this,view,"commonList.txt",position,"definitionCommon.txt");
 
             }
         });

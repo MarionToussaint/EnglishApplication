@@ -36,7 +36,7 @@ public class ListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 pos = position;
-                model.showPopup(ListActivity.this,view,feedList,position,"definition.txt");
+                model.showPopup(ListActivity.this,view,"fullList.txt",position,"definition.txt");
 
             }
         });
