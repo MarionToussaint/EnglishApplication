@@ -727,6 +727,16 @@
                 android:layout_alignLeft="@+id/editText4"
                 android:layout_alignStart="@+id/editText4" />
 
+            <ExpandableListView
+                android:layout_width="match_parent"
+                android:layout_height="420px"
+                android:id="@+id/expandableListView"
+                android:background="@color/canard"
+                android:layout_weight="0.87"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
             <TextView
                 android:text="Have"
                 android:layout_width="wrap_content"
@@ -737,19 +747,8 @@
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textStyle="normal|bold"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp"
-                android:layout_below="@+id/expandableListView"/>
-
-            <ExpandableListView
-                android:layout_width="match_parent"
-                android:layout_height="420px"
-                android:id="@+id/expandableListView"
-                android:background="@color/canard"
-                android:layout_weight="0.87"
-                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/expandableListView"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 

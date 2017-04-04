@@ -25,6 +25,7 @@ public class Exercise4Model {
     public String[] answerList1 = new String[]{"cry","play","want","live","shout","shift","seel","cancel","crinkle","follow"};
     public String[] answerList2 = new String[]{"venge","flirt","risk","wrap","rive","rip","bet","seem","flee","kick"};
     public String[] answerList3 = new String[]{"repeal","imagine","spall","carve","spean","beg","castle","case","loose","forward"};
+    public String[] answer = new String[10];
 
     public Exercise4Model() {
     }
@@ -112,11 +113,11 @@ public class Exercise4Model {
         else {
             x = ("No Answer");
         }
+        System.out.println("X :" +x);
         return x;
     }
 
     public String[] answerList(ArrayList<EditText> t){
-        String[] answer = new String[10];
         int j = 0;
         for (EditText e : t){
             answer[j] = editTextEmpty(e);
@@ -146,13 +147,13 @@ public class Exercise4Model {
         int r = 0;
         switch (level){
             case (1):
-                verify(txt,txt1,correct,a1);
+                verify(txt,txt1,a1,correct);
                 break;
             case (2):
-                verify(txt,txt1,correct,a2);
+                verify(txt,txt1,a2,correct);
                 break;
             case(3):
-                verify(txt,txt1,correct,a3);
+                verify(txt,txt1,a3,correct);
                 break;
         }
     }

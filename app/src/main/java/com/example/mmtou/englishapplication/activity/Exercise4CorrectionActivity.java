@@ -69,7 +69,7 @@ public class Exercise4CorrectionActivity extends AppCompatActivity {
 
         model.changeLevel2(Exercise4ChoiceActivity.level,model.listLevel1,model.listLevel2,model.listLevel3,listTextView);
 
-        model.verifyLevel(listAnswer,listCorrection, Exercise4ChoiceActivity.level, Exercise2Activity.i,model.answerList1,model.answerList2,model.answerList3);
+        model.verifyLevel(listAnswer,listCorrection, Exercise4ChoiceActivity.level,Exercise4Activity.i,model.answerList1,model.answerList2,model.answerList3);
         int score = model.scoreLevel(Exercice2ChoiceActivity.level,Exercise2Activity.i, model.answerList1,model.answerList2,model.answerList3);
         ((TextView)findViewById(R.id.score)).setText("Your Score is " + score + "%");
 
