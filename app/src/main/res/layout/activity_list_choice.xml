@@ -100,7 +100,7 @@
         android:layout_alignStart="@+id/relativeLayout2">
 
         <TextView
-            android:text="Verbs Having Different Irregular Verbs"
+            android:text="Verbs Having Different Irregular Forms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/different"
