@@ -765,7 +765,7 @@
         android:layout_alignParentStart="true">
 
         <TextView
-            android:text="Find Missing Forms - Mix"
+            android:text="Find Missing Forms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/title"

@@ -60,10 +60,11 @@ public class Exercise4Model {
     }
 
     public void setLevel(ArrayList<TextView> l, String[][] s){
-        int i = 0;
+        int k = 0;
         for (TextView t : l){
-            t.setText(s[i][0]+"\t\t"+s[i][1]+"\t\t"+s[i][2]+"\t\t"+s[i][3]);
-            i++;
+            t.setText(s[k][0]+"\t\t"+s[k][1]+"\t\t"+s[k][2]+"\t\t"+s[k][3]);
+            k++;
+
         }
     }
 

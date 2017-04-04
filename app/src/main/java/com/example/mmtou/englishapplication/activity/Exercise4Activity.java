@@ -19,7 +19,7 @@ public class Exercise4Activity extends AppCompatActivity {
     public int[] edittext = new int [] {R.id.editText,R.id.editText2,R.id.editText3,R.id.editText4,R.id.editText5,R.id.editText6,R.id.editText7,R.id.editText8,R.id.editText9,R.id.editText10};
 
     private ArrayList<TextView> listTitle = new ArrayList<TextView>();
-    public static ArrayList<TextView> listTextView = new ArrayList<TextView>();
+    public ArrayList<TextView> listTextView = new ArrayList<TextView>();
     private StyleModel style = new StyleModel();
     private Exercise4Model model = new Exercise4Model();
     private ArrayList<EditText> listEdit= new ArrayList<EditText>();
