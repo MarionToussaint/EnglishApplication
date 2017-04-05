@@ -55,6 +55,7 @@ public class Exercise5CorrectionActivity extends AppCompatActivity {
         }
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise5CorrectionActivity.this,listAnswer);
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise5CorrectionActivity.this,listCorrection);
+        model.changeLevel(Exercise5ChoiceActivity.level,model.listVerb1,model.listVerb2,model.listVerb3,listTextView);
 
         int score = model.scoreLevel(Exercise5ChoiceActivity.level,Exercise5Activity.i,model.listAnswer1,model.listAnswer2,model.listAnswer3);
         ((TextView)findViewById(R.id.score)).setText("Your Score is " + score + "%");

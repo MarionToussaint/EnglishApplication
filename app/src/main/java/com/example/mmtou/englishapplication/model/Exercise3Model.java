@@ -199,6 +199,23 @@ public class Exercise3Model {
         }
     }
 
+    public void changeLevel2(int level, String[][] s1, String[][] s2, String[][] s3, String[][] s4,int[] i1,int[] i2,int[] i3,int[] i4,ArrayList<TextView> l){
+        switch (level){
+            case (1):
+                setLevel(l,s1,i1);
+                break;
+            case (2):
+                setLevel(l,s2,i2);
+                break;
+            case(3):
+                setLevel(l,s3,i3);
+                break;
+            case (4):
+                setLevel(l,s4,i4);
+                break;
+        }
+    }
+
     public String editTextEmpty(EditText box1){
         String x;
         if (!(box1.getText().toString().trim().length() == 0)){

@@ -81,7 +81,7 @@ public class Exercise3Correction extends AppCompatActivity {
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise3Correction.this,listAnswer);
         style.changeFontAndBold("fonts/Aprikas_light_Demo.ttf",Exercise3Correction.this,listCorrection);
 
-        model.setLevel(listTextView,model.listLevel1,model.level1);
+        model.changeLevel2(Exercise3ChoiceActivity.level,model.listLevel1,model.listLevel2,model.listLevel3,model.listLevel4,model.level1,model.level2,model.level3,model.level4,listTextView);
 
         model.verifyLevel(listAnswer,listCorrection, Exercise3ChoiceActivity.level,Exercise3Activity.i,model.listLevel1,model.listLevel2,model.listLevel3,model.listLevel4, model.level1,model.level2,model.level3,model.level4);
 

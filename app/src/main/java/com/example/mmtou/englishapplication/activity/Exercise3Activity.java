@@ -25,7 +25,7 @@ public class Exercise3Activity extends AppCompatActivity {
     private List<String>parentHeaderInformation;
     private ArrayList<TextView> listTitle = new ArrayList<TextView>();
     private ArrayList<TextView> listTextView = new ArrayList<TextView>();
-    private ArrayList<EditText> listEditText = new ArrayList<EditText>();
+    public ArrayList<EditText> listEditText = new ArrayList<EditText>();
     private StyleModel style = new StyleModel();
     private Exercise3Model model = new Exercise3Model();
     public static String[] i ;
